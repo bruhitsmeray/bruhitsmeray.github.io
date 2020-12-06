@@ -1,42 +1,27 @@
+@font-face { font-family: 'Blow'; src: url(/fonts/blow.ttf); }
+@font-face { font-family: 'Adler'; src: url(/fonts/adler.ttf); }
+
 *{
     padding: 0px;
     margin: 0px;
     cursor: url(images/cursor.svg), auto;
 }
 
-@font-face { font-family: 'Pricedown Bl'; src: url(/fonts/pricedown.ttf); }
-@font-face { font-family: 'Adler'; src: url(/fonts/adler.ttf); }
-
-/* #region Cursor */
-/* .cursor{
-    width: 20px;
-    height: 20px;
-    
-    border: 1px solid black;
-    border-radius: 50%;
-
-    pointer-events: none;
-
-    position: absolute;
-} */
-/* #endregion */
-
-/* #region Container & Navbar */
 .container{
     height: 969px;
     width: 100%;
-
+    
     background-position: center;
     background-color: whitesmoke;
     background-size: cover;
-
+    
     font-family: 'Helvetica Neue', 'Segoe UI', Arial, Helvetica, sans-serif;
-
+    
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     padding-left: 3.5%;
     padding-right: 3.5%;
-
+    
     box-sizing: border-box;
     position: relative;
 }
@@ -45,18 +30,18 @@
     background-color: rgb(155, 155, 155);
     background-position: center;
     background-size: cover;
-
+    
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
+    
     width: 100%;
     height: 125px;
-
+    
     margin: auto;
     display: flex;
-
+    
     align-items: center;
 }
 /* #endregion */
@@ -65,7 +50,7 @@
 .logo{
     padding-left: 25px;
     padding-bottom: 0.5%;
-
+    
     width: 80px;
     cursor: pointer;
 }
@@ -74,7 +59,7 @@
     font-family: Squirk;
     font-size: 48px;
     color: white;
-
+    
     padding-top: 2px;
 }
 /* #endregion */
@@ -88,7 +73,7 @@ nav{
 
 nav ul li{
     display: inline-block;
-
+    
     list-style: none;
     margin: 0px 20px;
 }
@@ -105,7 +90,7 @@ nav ul li a{
     flex: 1;
     padding-top: 18px;
     padding-bottom: 18px;
-
+    
     margin: 20px 20px;
 }
 
@@ -113,19 +98,19 @@ nav ul li a{
     background-color: rgb(155, 155, 155);
     background-position: center;
     background-size: cover;
-
+    
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
+    
     margin-top: 1.25%;
     
     font-size: 18px;
 }
 
 .post ul h1{
-    font-family: 'Pricedown Bl';
+    font-family: 'Blow';
     font-size: 50px;
     color: black;
 }
@@ -134,3 +119,19 @@ nav ul li a{
     color: black;
 }
 /* #endregion */
+
+/* #region Cursor */
+/* .cursor{
+    width: 20px;
+    height: 20px;
+    
+    border: 1px solid black;
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    position: absolute;
+} */
+/* #endregion */
+
+/* #region Container & Navbar */
