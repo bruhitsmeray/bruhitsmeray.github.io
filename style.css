@@ -4,6 +4,9 @@
     cursor: url(images/cursor.svg), auto;
 }
 
+@font-face { font-family: 'Still Time'; src: url(/fonts/stilltime.ttf); }
+@font-face { font-family: 'Ninja Naruto'; src: url(/fonts/njnaruto.ttf); }
+
 /* #region Cursor */
 /* .cursor{
     width: 20px;
@@ -122,7 +125,7 @@ nav ul li a{
 }
 
 .post ul h1{
-    font-family: 'Still Time'; src: url(/fonts/StillTime.ttf);
+    font-family: 'Ninja Naruto';
     font-size: 50px;
     color: black;
 }
