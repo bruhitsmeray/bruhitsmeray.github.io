@@ -1,4 +1,5 @@
 @font-face { font-family: 'Blow'; src: url(/fonts/blow.ttf); }
+@font-face { font-family: 'Squealer'; src: url(/fonts/squealer.ttf); }
 
 *{
     padding: 0px;
@@ -109,7 +110,7 @@ nav ul li a{
 }
 
 .post ul h1{
-    font-family: 'Blow';
+    font-family: 'Squealer';
     font-size: 50px;
     color: black;
 }
