@@ -1,10 +1,11 @@
-@font-face { font-family: 'Vantage BRK'; src: url(/fonts/vantage.ttf); }
-@font-face { font-family: 'Squealer'; src: url(/fonts/squealer.ttf); }
+@font-face { font-family: 'Vantage BRK'; src: url(assets/fonts/vantage.ttf); }
+@font-face { font-family: 'Squealer'; src: url(assets/fonts/squealer.ttf); }
+@font-face { font-family: 'Squirk'; src: url(assets/fonts/squirk.otf); }
 
 *{
     padding: 0px;
     margin: 0px;
-    cursor: url(images/cursor.svg), auto;
+    cursor: url(assets/images/cursor.svg), auto;
 }
 
 .container{
@@ -56,7 +57,7 @@
 }
 
 .title{
-    font-family: Squirk;
+    font-family: 'Squirk';
     font-size: 48px;
     color: white;
     
@@ -110,7 +111,7 @@ nav ul li a{
 }
 
 .post ul h1{
-    font-family: 'Vantage BRK';
+    font-family: 'Squealer';
     font-size: 50px;
     color: black;
 }
