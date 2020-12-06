@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    cursor: url(/images/cursor.svg), auto;
+    cursor: url(images/cursor.svg), auto;
 }
 
 /* #region Cursor */
@@ -23,15 +23,16 @@
     height: 969px;
     width: 100%;
 
-    background-color: whitesmoke;
     background-position: center;
+    background-color: whitesmoke;
     background-size: cover;
 
     font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
 
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
     padding-left: 3.5%;
     padding-right: 3.5%;
-    padding-top: 1.5%;
 
     box-sizing: border-box;
     position: relative;
