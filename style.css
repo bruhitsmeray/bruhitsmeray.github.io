@@ -1,4 +1,4 @@
-@font-face { font-family: 'Blow'; src: url(/fonts/blow.ttf); }
+@font-face { font-family: 'Vantage BRK'; src: url(/fonts/vantage.ttf); }
 @font-face { font-family: 'Squealer'; src: url(/fonts/squealer.ttf); }
 
 *{
@@ -110,7 +110,7 @@ nav ul li a{
 }
 
 .post ul h1{
-    font-family: 'Squealer';
+    font-family: 'Vantage BRK';
     font-size: 50px;
     color: black;
 }
