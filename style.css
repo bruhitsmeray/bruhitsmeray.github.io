@@ -4,8 +4,8 @@
     cursor: url(images/cursor.svg), auto;
 }
 
-@font-face { font-family: 'Still Time'; src: url(/fonts/stilltime.ttf); }
-@font-face { font-family: 'Ninja Naruto'; src: url(/fonts/njnaruto.ttf); }
+@font-face { font-family: 'Pricedown Bl'; src: url(/fonts/pricedown.ttf); }
+@font-face { font-family: 'Adler'; src: url(/fonts/adler.ttf); }
 
 /* #region Cursor */
 /* .cursor{
@@ -125,7 +125,7 @@ nav ul li a{
 }
 
 .post ul h1{
-    font-family: 'Ninja Naruto';
+    font-family: 'Pricedown Bl';
     font-size: 50px;
     color: black;
 }
