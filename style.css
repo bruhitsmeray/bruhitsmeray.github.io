@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    cursor: url(/images/cursor.svg), auto;
+}
+
+/* #region Cursor */
+/* .cursor{
+    width: 20px;
+    height: 20px;
+    
+    border: 1px solid black;
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    position: absolute;
+} */
+/* #endregion */
+
+/* #region Container & Navbar */
+.container{
+    height: 969px;
+    width: 100%;
+
+    background-color: whitesmoke;
+    background-position: center;
+    background-size: cover;
+
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    padding-top: 1.5%;
+
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar{
+    background-color: rgb(155, 155, 155);
+    background-position: center;
+    background-size: cover;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    width: 100%;
+    height: 125px;
+
+    margin: auto;
+    display: flex;
+
+    align-items: center;
+}
+/* #endregion */
+
+/* #region Logo & Title */
+.logo{
+    padding-left: 25px;
+    padding-bottom: 0.5%;
+
+    width: 80px;
+    cursor: pointer;
+}
+
+.title{
+    font-family: Squirk;
+    font-size: 48px;
+    color: white;
+
+    padding-top: 2px;
+}
+/* #endregion */
+
+/* #region Nav */
+nav{
+    flex: 1;
+    padding-left: 1px;
+    padding-top: 17.5px;
+}
+
+nav ul li{
+    display: inline-block;
+
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+/* #endregion */
+
+/* #region Content */
+.content nav{
+    flex: 1;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    margin: 20px 20px;
+}
+
+.post{
+    background-color: rgb(155, 155, 155);
+    background-position: center;
+    background-size: cover;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    margin-top: 1.25%;
+    
+    font-size: 18px;
+}
+
+.post ul h1{
+    font-family: squirk;
+    font-size: 50px;
+    color: black;
+}
+
+.post ul b{
+    color: black;
+}
+/* #endregion */
