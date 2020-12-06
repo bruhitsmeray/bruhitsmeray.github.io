@@ -122,7 +122,7 @@ nav ul li a{
 }
 
 .post ul h1{
-    font-family: url(/fonts/StillTime.ttf);
+    font-family: 'Still Time'; src: url(/fonts/StillTime.ttf);
     font-size: 50px;
     color: black;
 }
