@@ -8,12 +8,16 @@
     cursor: url(assets/images/cursor.svg), auto;
 }
 
+html{
+    background-color: rgb(50, 60, 80);
+}
+
 .container{
     height: 969px;
     width: 100%;
     
     background-position: center;
-    background-color: whitesmoke;
+    background-color: rgb(50, 60, 80);
     background-size: cover;
     
     font-family: 'Helvetica Neue', 'Segoe UI', Arial, Helvetica, sans-serif;
@@ -48,14 +52,14 @@
 
 /* #region NAVBAR */
 .navbar{
-    background-color: rgb(155, 155, 155);
+    background-color: rgba(0, 0, 0, 0.275);
     background-position: center;
     background-size: cover;
     
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     
     width: 100%;
     height: 125px;
@@ -64,6 +68,7 @@
     display: flex;
     
     align-items: center;
+    text-align: center;
 }
 /* #endregion */
 
@@ -96,6 +101,7 @@ nav ul li a{
     padding-top: 18px;
     padding-bottom: 18px;
     
+    color: rgba(0, 0, 0, 0.65);
     text-align: center;
     margin: 20px 20px;
 }
@@ -103,14 +109,14 @@ nav ul li a{
 
 /* #region POST */
 .post{
-    background-color: rgb(155, 155, 155);
+    background-color: rgba(155, 155, 155, 0.5);
     background-position: center;
     background-size: cover;
     
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     
     margin-top: 1.25%;
     
@@ -120,11 +126,6 @@ nav ul li a{
 .post ul h1{
     font-family: 'Squealer';
     font-size: 50px;
-    color: black;
-}
-
-.post ul b{
-    color: black;
 }
 
 .post ul p br{
