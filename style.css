@@ -2,6 +2,7 @@
 @font-face { font-family: 'Squealer'; src: url(assets/fonts/squealer.ttf); }
 @font-face { font-family: 'Squirk'; src: url(assets/fonts/squirk.otf); }
 
+/* #region BASIC */
 *{
     padding: 0px;
     margin: 0px;
@@ -26,7 +27,9 @@
     box-sizing: border-box;
     position: relative;
 }
+/* #endregion */
 
+/* #region NAVBAR */
 .navbar{
     background-color: rgb(155, 155, 155);
     background-position: center;
@@ -47,7 +50,7 @@
 }
 /* #endregion */
 
-/* #region Logo & Title */
+/* #region BRANDING */
 .logo{
     padding-left: 25px;
     padding-bottom: 0.5%;
@@ -65,7 +68,7 @@
 }
 /* #endregion */
 
-/* #region Nav */
+/* #region NAVIGATION */
 nav{
     flex: 1;
     padding-left: 1px;
@@ -81,13 +84,25 @@ nav ul li{
 
 nav ul li a{
     font-family: 'Helvetica';
+
     text-decoration: none;
     font-size: 18px;
     color: white;
 }
 /* #endregion */
 
-/* #region Content */
+/* #region ABOUT_CONTENT */
+.about_content nav{
+    flex: 1;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+    text-align: center;
+    margin: 20px 20px;
+}
+/* #endregion */
+
+/* #region CONTENT */
 .content nav{
     flex: 1;
     padding-top: 18px;
@@ -95,7 +110,9 @@ nav ul li a{
     
     margin: 20px 20px;
 }
+/* #endregion */
 
+/* #region POST */
 .post{
     background-color: rgb(155, 155, 155);
     background-position: center;
@@ -120,9 +137,13 @@ nav ul li a{
 .post ul b{
     color: black;
 }
+
+.post ul p br{
+    text-align: center;
+}
 /* #endregion */
 
-/* #region Cursor */
+/* #region CURSOR */
 /* .cursor{
     width: 20px;
     height: 20px;
@@ -135,5 +156,3 @@ nav ul li a{
     position: absolute;
 } */
 /* #endregion */
-
-/* #region Container & Navbar */
