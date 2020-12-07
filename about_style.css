@@ -91,12 +91,13 @@ nav ul li a{
 }
 /* #endregion */
 
-/* #region CONTENT */
-.content nav{
+/* #region ABOUT_CONTENT */
+.about_content nav{
     flex: 1;
     padding-top: 18px;
     padding-bottom: 18px;
     
+    text-align: center;
     margin: 20px 20px;
 }
 /* #endregion */
