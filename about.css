@@ -95,6 +95,7 @@ html{
 }
 
 .about_post{
+    width: 50%;
     float: left;
 
     background-color: rgba(155, 155, 155, 0.5);
@@ -125,6 +126,7 @@ html{
 }
 
 .socials_post{
+    width: 50%;
     float: right;
 
     background-color: rgba(155, 155, 155, 0.5);
