@@ -1,5 +1,5 @@
-@font-face { font-family: 'Squealer'; src: url(assets/fonts/squealer.ttf); }
-@font-face { font-family: 'Squirk'; src: url(assets/fonts/squirk.otf); }
+@font-face { font-family: 'Squealer'; src: url(/assets/fonts/squealer.ttf); }
+@font-face { font-family: 'Squirk'; src: url(/assets/fonts/squirk.otf); }
 
 /* #region BASIC */
 *{
