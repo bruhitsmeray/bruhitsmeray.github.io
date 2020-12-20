@@ -8,14 +8,12 @@
 }
 
 html{
-    top: 0;
-    bottom: 0;
-
+    height: 100%;
     width: 100%;
 
     background-image: url(/assets/images/backgrounds/background_06b.jpg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
 }
 
 .copyright{
