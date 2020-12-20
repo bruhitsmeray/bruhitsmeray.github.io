@@ -10,6 +10,7 @@
 html{
     background-image: url(/assets/images/backgrounds/background_06.jpg);
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .copyright{
