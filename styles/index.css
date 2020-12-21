@@ -16,7 +16,7 @@ html{
     width: 100%;
 
     background-image: url(/assets/images/backgrounds/background_1080.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 
     color: white;
     min-height: 100vh;
