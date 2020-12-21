@@ -80,7 +80,7 @@ html{
     padding: 19.38px;
 
     border: 2px solid;
-    border-color: coral;
+    border-color: rgba(255, 145, 0, 0.275);
     
     backdrop-filter: blur(7px);
 }
