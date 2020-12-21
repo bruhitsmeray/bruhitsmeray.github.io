@@ -119,14 +119,14 @@ html{
 /* #endregion */
 
 /* #region GENERAL_ITEMS */
-.title{
+.title a{
     font-family: 'Squirk';
     font-size: 32px;
 
     padding-left: 20px;
     
     color: whitesmoke;
-    list-style: none;
+    text-decoration: none;
 }
 
 .time{
