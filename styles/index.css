@@ -15,21 +15,37 @@ html{
     height: 100%;
     width: 100%;
 
-    text-align: center;
+
 
     background-image: url(/assets/images/backgrounds/background_1080.jpg);
     background-repeat: no-repeat;
 
-    margin: 0;
-	padding: 1rem;
-
     color: white;
     min-height: 100vh;
+}
 
+.wrapper{
+    margin: 10% auto;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+
+    box-sizing: border-box;
+    position: relative;
 }
 
 .copyright{
@@ -137,21 +153,6 @@ html{
 		--gradX: 50%;
 		--gradY: 0%;
 	}
-}
-
-.container{
-    height: 100%;
-    width: 100%;
-
-    position: absolute;
-
-    padding-top: 1.2%;
-    padding-bottom: 1.2%;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
-
-    box-sizing: border-box;
-    position: relative;
 }
 /* #endregion */
 

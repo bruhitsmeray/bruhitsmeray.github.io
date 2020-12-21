@@ -11,19 +11,35 @@
     </head>
 
     <body>
-            <div class = "wrapper">
+        <div class = "container">
+            <div class = "general">
+                <nav>
+                    <ul class = "general_ul">
+                        <li class = "title">WHITELINE</li>
+                        
+                        <!-- #region E_TIME -->
+                        <li class = "time"><span id = "datetime"></span></li>
+                        <script type = "text/javascript" src = "scripts/hour.js"></script>
+                        <!-- #endregion -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class = "wrapper">
+            <nav>
                 <div class = "box">
                     <li><a href = "pages/blog.html">BLOG</a></li>
                 </div>
-
+    
                 <div class = "box">
                     <li><a href = "pages/projects.html">PORTFOLIO</a></li>
                 </div>
-
+    
                 <div class = "box">
                     <li><a href = "pages/about.html">ABOUT</a></li>
                 </div>
-            </div>
+            </nav>
+        </div>
         <footer class = "copyright">©2020-2021 Whiteline</footer>
     </body>
 </html>
