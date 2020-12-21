@@ -122,9 +122,11 @@ html{
 .title{
     font-family: 'Squirk';
     font-size: 32px;
+
+    padding-left: 20px;
     
     color: whitesmoke;
-    padding-left: 20px;
+    list-style: none;
 }
 
 .time{
