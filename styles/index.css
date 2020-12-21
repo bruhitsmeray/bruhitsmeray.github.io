@@ -5,8 +5,6 @@
 
 /* #region BASIC */
 *{
-    box-sizing: border-box;
-
     padding: 0px;
     margin: 0px;
 }
@@ -19,14 +17,11 @@ html{
     background-repeat: repeat;
 
     color: white;
-    min-height: 100vh;
 }
 
 .container{
     height: 100%;
     width: 100%;
-
-    position: absolute;
 
     padding-top: 1.2%;
     padding-bottom: 1.2%;
@@ -38,7 +33,7 @@ html{
 }
 
 .copyright{
-    position: fixed;
+    position: absolute;
     width: 100%;
     
     left: 0;
@@ -53,10 +48,15 @@ html{
 
 /* #region WRAPPER */
 .wrapper{
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
     margin: 10% auto;
-    text-align: center;
+    text-align: center;  
+      
     display: flex;
-    flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
