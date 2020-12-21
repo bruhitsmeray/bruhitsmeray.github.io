@@ -15,8 +15,6 @@ html{
     height: 100%;
     width: 100%;
 
-
-
     background-image: url(/assets/images/backgrounds/background_1080.jpg);
     background-repeat: no-repeat;
 
@@ -50,7 +48,7 @@ html{
 
 .copyright{
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 
     color: white;
     text-align: center;
@@ -81,8 +79,6 @@ html{
 :root {
 	--d: 2500ms;
 	--angle: 90deg;
-	/* --gradX: 100%;
-	--gradY: 50%; */
 	--c1: rgb(255, 94, 0);
 	--c2: rgba(255, 145, 0, 0.1);
 }
@@ -116,8 +112,8 @@ html{
     
     backdrop-filter: blur(7px);
 
-	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
+	border-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite;
 }
 
 .box:nth-child(2) {  
@@ -132,28 +128,18 @@ html{
 	}
 }
 
-@keyframes borderRadial {
-	20% {
-		--gradX: 100%;
-		--gradY: 50%;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
 	}
-	40% {
-		--gradX: 100%;
-		--gradY: 100%;
-	}
-	60% {
-		--gradX: 50%;
-		--gradY: 100%;
-	}
-	80% {
-		--gradX: 0%;
-		--gradY: 50%;
+	50% {
+		background-position: 100% 50%;
 	}
 	100% {
-		--gradX: 50%;
-		--gradY: 0%;
+		background-position: 0% 50%;
 	}
 }
+
 /* #endregion */
 
 /* #region NAVBAR */
