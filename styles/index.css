@@ -1,0 +1,210 @@
+@font-face { font-family: 'Squealer'; src: url(/assets/fonts/squealer.ttf); }
+@font-face { font-family: 'Squirk'; src: url(/assets/fonts/squirk.otf); }
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+/* #region BASIC */
+*{
+    box-sizing: border-box;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+
+    background-image: url(/assets/images/backgrounds/background_1080.jpg);
+    background-repeat: no-repeat;
+
+    margin: 0;
+	padding: 1rem;
+
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.copyright{
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    color: white;
+    text-align: center;
+}
+
+.button_blog{
+    height: 120px;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	/* --gradX: 100%;
+	--gradY: 50%; */
+	--c1: rgb(255, 94, 0);
+	--c2: rgba(255, 145, 0, 0.1);
+}
+
+/* #region WRAPPER */
+.wrapper div li{
+    display: inline-block;
+    list-style: none;
+}
+
+.wrapper div li a{
+    font-family: 'Corbel';
+    font-size: 32px;
+
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* #endregion */
+
+/* #region BOX */
+.box {
+    background-color: rgba(0, 0, 0, 0.275);
+    background-position: center;
+    background-size: cover;
+
+    margin: 15px;
+
+    padding: 19.38px;
+    border: 1.75px solid;
+    
+    backdrop-filter: blur(7px);
+
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {  
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+/* #endregion */
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+
+    box-sizing: border-box;
+    position: relative;
+}
+/* #endregion */
+
+/* #region NAVBAR */
+.general{
+    width: 100%;
+    height: 68px;
+    
+    background-color: rgba(0, 0, 0, 0.275);
+    background-position: center;
+    background-size: cover;
+
+    backdrop-filter: blur(7px);
+
+    margin: auto;
+    display: flex;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+/* #endregion */
+
+/* #region GENERAL_ITEMS */
+.title{
+    font-family: 'Squirk';
+    font-size: 32px;
+    
+    color: whitesmoke;
+    padding-left: 20px;
+}
+
+.time{
+    float: right;
+
+    color: white;
+    padding-right: 20px;
+
+    font-size: 32px;
+    font-family: 'Arial';
+}
+
+.general nav{
+    flex: 1;
+    padding-left: 1px;
+    padding-top: 17.5px;
+}
+
+.general nav ul li{
+    margin: 0% 1%;
+
+    display: inline-block;
+    list-style: none;
+}
+/* #endregion */
