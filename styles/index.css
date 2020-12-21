@@ -22,15 +22,6 @@ html{
     min-height: 100vh;
 }
 
-.wrapper{
-    margin: 10% auto;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
 .container{
     height: 100%;
     width: 100%;
@@ -54,36 +45,16 @@ html{
     text-align: center;
 }
 
-.button_blog{
-    height: 120px;
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 90deg;
-  inherits: true;
-}
-
-@property --gradX {
-  syntax: '<percentage>';
-  initial-value: 50%;
-  inherits: true;
-}
-
-@property --gradY {
-  syntax: '<percentage>';
-  initial-value: 0%;
-  inherits: true;
-}
-
-:root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--c1: rgb(255, 94, 0);
-	--c2: rgba(255, 145, 0, 0.1);
-}
-
 /* #region WRAPPER */
+.wrapper{
+    margin: 10% auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 .wrapper div li{
     display: inline-block;
     list-style: none;
@@ -106,40 +77,13 @@ html{
     background-size: cover;
 
     margin: 15px;
-
     padding: 19.38px;
-    border: 1.75px solid;
+
+    border: 2px solid;
+    border-color: coral;
     
     backdrop-filter: blur(7px);
-
-	border-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	animation: gradient 15s ease infinite;
 }
-
-.box:nth-child(2) {  
-	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
-	animation: borderRadial var(--d) linear infinite forwards;
-}
-/* #endregion */
-
-@keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 /* #endregion */
 
 /* #region NAVBAR */
