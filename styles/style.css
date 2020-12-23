@@ -82,10 +82,48 @@ body {
 }
 /* #endregion */
 
+/* #region SOCIAL */
+.social {
+    z-index: 1;
+
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    position: fixed;
+
+    justify-content: center;
+}
+
+.social a {
+    color: orangered;
+    background: rgb(235,235,235, 0.65);
+    box-shadow: 2px 2px 5px gray;
+
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+
+    margin: 5px;
+    padding: 20px;
+
+    text-align: center;
+    transition: transform 1s;
+}
+
+.social a:hover {
+    transform: translate(20px, 0);
+}
+
+.social i {
+    margin-top: 5px;
+    font-size: 20px;
+}
+/* #endregion */
+
 /* #region SHOWCASE_AREA */
 #showcase {
-    /* background: url(/assets/images/background.jpg) no-repeat center center/cover; */
-    background: url(https://i.imgur.com/wSJ9JqA.jpeg) no-repeat center center/cover;
+    background: url(/assets/images/background.jpg) no-repeat center center/cover;
+    /* background: url(https://i.imgur.com/wSJ9JqA.jpeg) no-repeat center center/cover; */
 
     height: 91.35vh;
 }
@@ -172,7 +210,15 @@ body {
 }
 
 #about .about-text {
+    list-style: none;
+
     text-align: justify;
+    text-decoration: none;
+}
+
+#about .about-text li a i {
+    color: orange;
+    align-content: center;
 }
 
 #about .about-image img {
@@ -212,7 +258,7 @@ body {
 #projects .box {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #d1d1d1;
+    box-shadow: 2px 2px 5px gray;
 
     padding: 3rem;
     margin: 0 3rem;
@@ -325,6 +371,7 @@ body {
 
 /* #region FOOTER */
 footer {
+    border-top: 3px solid orangered;
     padding: 2.5rem;
 }
 
