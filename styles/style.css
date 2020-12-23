@@ -126,11 +126,11 @@ body {
 }
 
 .showcase-content {
+    height: 91.35vh;
+    
     display: flex;
-    position: absolute;
     flex-direction: column;
 
-    top: 81px;
     bottom: 0px;
     left: 0px;
     right: 0px;
