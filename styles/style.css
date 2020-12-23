@@ -136,7 +136,6 @@ body {
     right: 0px;
 
     background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
     color: black;
 
     text-align: center;
