@@ -242,10 +242,10 @@ body {
 }
 
 #projects h3 {
-    text-align: center;
-
-    margin-bottom: 2rem;
     font-size: 2rem;
+    margin-bottom: 2rem;
+
+    text-align: center;
 }
 
 #projects .boxes {
@@ -273,6 +273,18 @@ body {
 
     margin: 0 1rem;
     margin-bottom: 1rem;
+}
+
+#projects .btn {
+    background: white;
+    font-size: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+#projects .btn:hover{
+    background-color: orangered;
+    color: white;
 }
 /* #endregion */
 
