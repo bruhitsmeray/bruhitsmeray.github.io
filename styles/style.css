@@ -320,6 +320,18 @@ body {
     margin-bottom: 2rem;
 }
 
+#contact .form-group select {
+    width: 80%;
+
+    background: #fff;
+    border-radius: 10px;
+    
+    padding: 1rem;
+    margin-left: 10%;
+
+    font-size: 1.3rem;
+}
+
 #contact .form-group label {
     display: block;
     width: 80%;
