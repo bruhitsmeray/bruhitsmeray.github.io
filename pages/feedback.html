@@ -44,14 +44,34 @@
                             </div>
                             <div class = "form-group">
                                 <label for = "soft-name">SOFTWARE NAME:</label>
-                                <select name = "software">
+                                <select name = "software" id = "name">
                                     <option value = "Eutera">EUTERA</option>
                                     <option value = "Ascend">ASCEND</option>
                                 </select>
                             </div>
                             <div class = "form-group">
+                                <label for = "soft-version">SOFTWARE VERSION (OPTIONAL):</label>
+                                <select name = "eutera-ver" id = "version">
+                                    <option value = "1.0">1.0</option>
+                                    <option value = "1.0.1" selected = "selected">1.0.1 (Latest)</option>
+                                </select>
+                            </div>
+                            <div class = "form-group">
+                                <label for = "soft-name">PLATFORM (OPTIONAL):</label>
+                                <select name = "platform">
+                                    <option value = "Windows" selected = "selected">Windows</option>
+                                    <option value = "MacOS_X">macOS 10.x</option>
+                                    <option value = "MacOS_XI">maxOS 11.x</option>
+                                    <option value = "Linux">Linux</option>
+                                </select>
+                            </div>
+                            <div class = "form-group">
                                 <label for = "issue">ISSUE:</label>
                                 <input type = "text" name = "issue" placeholder = "PLEASE TELL ME THE ISSUE YOU ENCOUNTERED.">
+                            </div>
+                            <div class = "form-group">
+                                <label for = "issue-date">DATE OF ENCOUNTER (OPTIONAL):</label>
+                                <input type = "date" name = "issue-date">
                             </div>
                             <input type = "submit" value = "SEND FEEDBACK" class = "contact-btn">
                         </form>
