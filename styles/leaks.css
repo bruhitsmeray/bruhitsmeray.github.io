@@ -30,8 +30,11 @@ footer {
     border: 1px solid rgb(30, 150, 150);
     border-radius: 10px;
 
-    margin: 1rem;
-    padding: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1.5rem;
+
+    padding: 2rem;
 }
 
 footer p {
