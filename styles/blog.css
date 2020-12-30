@@ -56,15 +56,11 @@ html{
     background-position: center;
     background-size: cover;
 
+    border-radius: 25px;
     backdrop-filter: blur(8px);
 
     margin: auto;
     display: flex;
-
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 .navigation{
@@ -82,21 +78,18 @@ html{
     margin: auto;
     margin-top: 10px;
 
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-radius: 25px;
 }
 /* #endregion */
 
 /* #region GENERAL_ITEMS */
 .title a{
+    color: whitesmoke;
+
     font-family: 'Squirk';
     font-size: 32px;
 
     padding-left: 20px;
-    
-    color: whitesmoke;
     text-decoration: none;
 }
 

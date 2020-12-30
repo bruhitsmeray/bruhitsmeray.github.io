@@ -15,6 +15,30 @@ body {
     color: #333;
     overflow-x: hidden;
 }
+
+html {
+    background-image: url(/assets/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+footer {
+    color: white;
+
+    background: rgba(30, 30, 30, 0.35);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgb(30, 150, 150);
+    border-radius: 10px;
+
+    margin: 1rem;
+    padding: 2.5rem;
+}
+
+footer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65)
+}
 /* #endregion */
 
 .container {
@@ -22,13 +46,12 @@ body {
     margin: auto;
 }
 
-.text-primary {
-    color: orangered;
-}
-
+/* #region PREMADE_COLORS */
 .bg_light {
-    background: #f4f4f4;
     color: #333;
+
+    background: rgba(235,235,235, 0.85);
+    backdrop-filter: blur(10px);
 }
 
 .bg-dark {
@@ -36,19 +59,30 @@ body {
     color: white;
 }
 
+.text-primary {
+    color: rgb(30, 150, 150);
+}
+/* #endregion */
+
 /* #region NAVBAR */
 #navbar {
     top: 0;
     z-index: 1;
 
-    color: #fff;
-    background: rgb(30, 30, 30);
-    border-bottom: 3px solid orangered;
+    color: white;
+
+    background: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgb(30, 150, 150);
+    border-radius: 10px;
 
     display: flex;
     justify-content: space-between;
 
-    padding: 1.5rem 8rem;
+    margin: 1rem;
+
+    padding: 1.1rem 8rem;
     position: sticky;
 }
 
@@ -59,70 +93,42 @@ body {
 }
 
 #navbar h2 a {
-    color: white;
+    color: whitesmoke;
+
+    font-family: 'Squirk';
+    font-size: 32px;
+
+    padding-right: 20px;
     text-decoration: none;
 }
 
 #navbar li a {
-    margin: 0 0.5rem;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+    margin: 0 0.05rem;
     padding: 1rem;
 
-    border-radius: 1px;
-
-    font-size: 1.3rem;
-
-    color: #fff;
     text-decoration: none;
-
     transition: background-color 0.25s;
 }
 
 #navbar li a:hover {
-    background-color: orangered;
+    background-color: rgb(30, 150, 150);
 }
 /* #endregion */
 
-/* #region SOCIAL */
-.social {
-    z-index: 1;
-
-    height: 100vh;
-    display: flex;
-
-    flex-direction: column;
-    position: fixed;
-
-    justify-content: center;
-}
-
-.social a {
-    color: orangered;
-    background: whitesmoke;
-    box-shadow: 2px 2px 5px gray;
-
-    border-radius: 20px;
-
-    margin: 5px;
-    padding: 20px;
-
-    text-align: center;
-    transition: transform 1s;
-}
-
-.social a:hover {
-    transform: translate(20px, 0);
-}
-
-.social i {
-    margin-top: 5px;
-    font-size: 20px;
-}
-/* #endregion */
-
-/* #region SHOWCASE_AREA */
+/* #region SHOWCASE */
 #showcase {
     height: 91.35vh;
-    background: url(/assets/images/background.jpg) no-repeat center center/cover;
+    border: 1px solid rgb(30, 150, 150);
+
+    box-shadow: 2px 2px 5px rgb(65, 65, 65);
+    border-radius: 10px;
+    
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .showcase-content {
@@ -135,7 +141,6 @@ body {
     left: 0px;
     right: 0px;
 
-    background: rgba(0, 0, 0, 0.6);
     color: black;
 
     text-align: center;
@@ -144,7 +149,7 @@ body {
 }
 
 .showcase-content h1 {
-    color: white;
+    color: black;
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -155,18 +160,18 @@ body {
 }
 
 .showcase-content .btn:hover{
-    background-color: orangered;
+    background-color: rgb(30, 150, 150);
     color: white;
 }
 
 .btn {
-    border: 1px solid orangered;
+    border: 1px solid rgb(30, 150, 150);
     border-radius: 25px;
 
     background: rgba(0, 0, 0, 0.275);
     backdrop-filter: blur(10px);
 
-    color: orangered;
+    color: rgb(30, 150, 150);
 
     padding: 1rem 2rem;
     display: inline-block;
@@ -176,9 +181,15 @@ body {
 }
 /* #endregion */
 
-/* #region SECTION_ABOUT */
+/* #region ABOUT */
 #about {
+    border: 1px solid rgb(30, 150, 150);
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 5px rgb(65, 65, 65);
+
     padding: 5rem;
+    margin: 1.5rem;
 }
 
 #about h2 {
@@ -229,97 +240,67 @@ body {
 }
 /* #endregion */
 
-/* #region SECTION_PROJECTS */
-#projects {
-    padding: 5rem 0;
+/* #region LEAKS */
+#leaks {
+    border: 1px solid rgb(30, 150, 150);
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 5px rgb(65, 65, 65);
+
+    padding: 5rem;
+    margin: 1.5rem;
 }
 
-#projects h2 {
+#leaks h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
 
     text-align: center;
 }
 
-#projects h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-
-    text-align: center;
-}
-
-#projects .boxes {
-    display: flex;
-}
-
-#projects .box {
-    background: #fff;
+#leaks div.audio-player {
+    border: 5px solid rgb(30, 150, 150);
     border-radius: 10px;
-    box-shadow: 2px 2px 5px gray;
-
-    padding: 3rem;
-    margin: 0 3rem;
-
-    flex: 1;
-    font-size: 0.85rem;
-}
-
-#projects .box i {
-    background: orangered;
-    border-radius: 50%;
-    color: white;
-
-    padding: 1rem;
-
-    margin: 0 1rem;
-    margin-bottom: 1rem;
-}
-
-#projects .btn {
-    background: white;
-    font-size: 1rem;
-
-    margin-bottom: 1rem;
-}
-
-#projects .btn:hover{
-    background-color: orangered;
-    color: white;
 }
 /* #endregion */
 
-/* #region SECTION_CONTACT */
-#contact {
-    padding: 5rem 0;
+/* #region REQUESTS */
+#request {
+    border: 1px solid rgb(30, 150, 150);
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 5px rgb(65, 65, 65);
+
+    padding: 5rem;
+    margin: 1.5rem;
 }
 
-#contact h2 {
-    margin-bottom: 8rem;
-
-    font-size: 3rem;
-    text-align: center;
-}
-
-#contact h3 {
+#request h3 {
     margin: 2rem 0;
 
     font-size: 3rem;
     text-align: center;
 }
 
-#contact .form-box {
-    background: #fff;
-    box-shadow: 2px 2px 5px #d1d1d1;
-    
-    border-radius: 10px;
-    padding: 3rem;
+#request .form-container {
+    position: relative;
 }
 
-#contact .form-group {
+#request .form-group {
     margin-bottom: 2rem;
 }
 
-#contact .form-group select {
+#request .form-group label {
+    display: block;
+    width: 80%;
+
+    margin-left: 10%;
+    margin-bottom: 0.5rem;
+
+    font-size: 1.1rem;
+}
+
+#request .form-group select {
     width: 80%;
 
     background: #fff;
@@ -331,18 +312,8 @@ body {
     font-size: 1.2rem;
 }
 
-#contact .form-group label {
-    display: block;
-    width: 80%;
-
-    margin-left: 10%;
-    margin-bottom: 0.5rem;
-
-    font-size: 1.1rem;
-}
-
-#contact .form-group input,
-#contact .form-group textarea {
+#request .form-group input,
+#request .form-group textarea {
     width: 80%;
     border: 0.5px solid #333;
     border-radius: 10px;
@@ -353,18 +324,18 @@ body {
     font-size: 1.2rem;
 }
 
-#contact .form-group textarea {
+#request .form-group textarea {
     font-family: Arial, sans-serif;
 }
 
-#contact .contact-btn {
+#request .contact-btn {
     width: 80%;
     display: inline-block;
     
     color: white;
     cursor: pointer;
 
-    background: orangered;
+    background: rgb(30, 150, 150);
 
     border: none;
     border-radius: 10px;
@@ -377,26 +348,10 @@ body {
     font-size: 1.5rem;
 }
 
-#contact .contact-btn:hover {
+#request .contact-btn:hover {
     color: black;
 
     background: white;
     border: 0.5px solid #333;
-}
-
-#contact .form-container {
-    position: relative;
-}
-/* #endregion */
-
-/* #region FOOTER */
-footer {
-    border-top: 3px solid orangered;
-    padding: 2.5rem;
-}
-
-footer p {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65)
 }
 /* #endregion */
