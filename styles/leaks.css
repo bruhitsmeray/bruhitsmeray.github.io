@@ -1,4 +1,4 @@
-@font-face { font-family: 'Squirk'; src: url(assets/fonts/squirk.otf); }
+@font-face { font-family: 'Squirk'; src: url(/assets/fonts/squirk.otf); }
 
 /* #region GENERAL_STYLING */
 * {
