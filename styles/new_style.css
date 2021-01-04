@@ -122,7 +122,7 @@ body {
 
 /* #region SHOWCASE_AREA */
 #showcase {
-    height: 89.35vh;
+    height: 91.35vh;
     border-radius: 20px;
 
     margin: 1rem;
@@ -133,7 +133,7 @@ body {
 }
 
 .showcase-content {
-    height: 89.35vh;
+    height: 91.35vh;
     border-radius: 20px;
 
     display: flex;
@@ -261,8 +261,13 @@ body {
     }
 
     #showcase {
+        height: 89.35vh;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+
+    .showcase-content {
+        height: 89.35vh;
     }
 
     .showcase-content h1 {
