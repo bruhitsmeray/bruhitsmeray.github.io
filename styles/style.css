@@ -164,7 +164,9 @@ body {
     border-radius: 25px;
 
     background: rgba(0, 0, 0, 0.275);
+
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     color: orangered;
 

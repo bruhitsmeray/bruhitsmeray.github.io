@@ -25,7 +25,9 @@ footer {
     color: white;
 
     background: rgba(30, 30, 30, 0.35);
+
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     border: 1px solid rgb(30, 150, 150);
     border-radius: 10px;
@@ -76,7 +78,9 @@ footer p {
     color: white;
 
     background: rgba(30, 30, 30, 0.65);
+
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     border: 1px solid rgb(30, 150, 150);
     border-radius: 10px;
@@ -173,7 +177,9 @@ footer p {
     border-radius: 25px;
 
     background: rgba(0, 0, 0, 0.275);
+
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     color: rgb(0, 177, 177);
 
