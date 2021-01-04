@@ -181,7 +181,7 @@ body {
 }
 /* #endregion */
 
-@media screen and (max-width: 960px)
+@media screen and (min-width: 200px) and (max-width: 767px) and (orientation : portrait)
 {
     #navbar h2 a {
         display: none;
