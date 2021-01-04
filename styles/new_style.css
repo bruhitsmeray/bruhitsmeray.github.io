@@ -189,8 +189,8 @@ body {
     border-radius: 20px;
 
     margin: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 #about h2 {
@@ -238,6 +238,72 @@ body {
     margin-left: auto;
 
     width: 45%;
+}
+/* #endregion */
+
+/* #region SECTION_PROJECTS */
+#projects {
+    border: 3px solid orangered;
+    padding: 5rem;
+
+    border-radius: 20px;
+
+    margin: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+    text-align: center;
+}
+
+#projects h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+    text-align: center;
+}
+
+#projects .boxes {
+    display: flex;
+}
+
+#projects .box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+
+    padding: 3rem;
+    margin: 0 3rem;
+
+    flex: 1;
+    font-size: 0.85rem;
+}
+
+#projects .box i {
+    background: orangered;
+    border-radius: 50%;
+    color: white;
+
+    padding: 1rem;
+
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+#projects .btn {
+    background: white;
+    font-size: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+#projects .btn:hover{
+    background-color: orangered;
+    color: white;
 }
 /* #endregion */
 
@@ -344,5 +410,19 @@ body {
     #about {   
         margin-left: 1.5rem;
         margin-right: 1.5rem;
+    }
+
+    #projects {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #projects .box{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #projects .boxes {
+        flex-direction: column;
     }
 }
