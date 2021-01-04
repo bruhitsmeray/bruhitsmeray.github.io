@@ -307,7 +307,7 @@ body {
 }
 /* #endregion */
 
-@media screen and (min-width: 200px) and (max-width: 767px) and (orientation : portrait)
+@media screen and (min-width: 200px) and (max-width: 960px) and (orientation : portrait)
 {
     .social { 
         display: none;
@@ -412,6 +412,7 @@ body {
         margin-right: 1.5rem;
     }
 
+    /* #region PROJECTS_MOBILE */
     #projects {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -425,4 +426,5 @@ body {
     #projects .boxes {
         flex-direction: column;
     }
+    /* #endregion */
 }
