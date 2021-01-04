@@ -260,6 +260,11 @@ body {
         opacity: 1;
     }
 
+    #showcase {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
     .showcase-content h1 {
         color: white;
         font-size: 2rem;
