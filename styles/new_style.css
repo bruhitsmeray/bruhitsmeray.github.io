@@ -416,13 +416,18 @@ body {
     /* #endregion */
 
     /* #region ABOUT_MOBILE */
-    #about {   
+    #about {
+        padding: 3rem;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
 
     #about h2 {
         font-size: 2rem;
+    }
+
+    #about h3 {
+        font-size: 1.5rem;
     }
 
     #about .about-image img {
