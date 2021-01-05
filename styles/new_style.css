@@ -27,6 +27,14 @@ body {
     color: orangered;
 }
 
+.spotify {
+    color: green;
+}
+
+.ytmusic {
+    color: red;
+}
+
 .bg_light {
     background: #f4f4f4;
     color: #333;
@@ -407,15 +415,33 @@ body {
     }
     /* #endregion */
 
+    /* #region ABOUT_MOBILE */
     #about {   
         margin-left: 1.5rem;
         margin-right: 1.5rem;
     }
 
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about .about-image img {
+        display: none;
+    }
+
+    #about .about-content {
+        display: block;
+    }
+    /* #endregion */
+
     /* #region PROJECTS_MOBILE */
     #projects {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
     }
 
     #projects .box{
