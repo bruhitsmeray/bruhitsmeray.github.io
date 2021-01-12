@@ -438,6 +438,10 @@ body {
         font-size: 1.75rem;
     }
 
+    #projects h3{
+        font-size: 1.80rem;
+    }
+
     #projects .box i {
         height: 15px;
         width: 20px;
