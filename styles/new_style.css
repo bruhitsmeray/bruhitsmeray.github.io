@@ -291,6 +291,15 @@ body {
     font-size: 0.85rem;
 }
 
+#projects .box i {
+    color: orangered;
+
+    padding: 1rem;
+
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
 #projects .btn {
     background: white;
     font-size: 1rem;
@@ -435,7 +444,7 @@ body {
     }
 
     #projects h2 {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     #projects h3{
@@ -443,21 +452,12 @@ body {
     }
 
     #projects .box i {
-        height: 15px;
+        height: 20px;
         width: 20px;
-
-        color: orangered;
-    
-        padding: 1rem;
-    
-        margin: 0 1rem;
-        margin-bottom: 1rem;
-
-        align-self: center;
     }
 
     #projects .box{
-        width: 120%;
+        width: 37.5vh;
         font-size: 12px;
 
         margin-top: 1rem;
