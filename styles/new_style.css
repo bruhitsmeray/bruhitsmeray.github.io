@@ -56,8 +56,7 @@ body {
     position: sticky;
 
     color: black;
-    background: rgba(245, 245, 245, 0.65);
-    backdrop-filter: blur(10px);
+    background: rgb(245, 245, 245);
 }
 
 .nav-links {
@@ -137,7 +136,7 @@ body {
     margin-left: 10rem;
     margin-right: 10rem;
 
-    background: url(/assets/images/background.jpg) no-repeat center center/cover;
+    background: url(/assets/images/showcase_b.png) no-repeat center center/cover;
 }
 
 .showcase-content {
@@ -147,7 +146,9 @@ body {
     display: flex;
     flex-direction: column;
 
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0);
+    /* backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px); */
 
     text-align: center;
     align-items: center;
@@ -159,6 +160,7 @@ body {
     border-radius: 100%;
 
     background: white;
+    border: 2px solid gray;
     
     margin-top: 5px;
     margin-left: auto;
@@ -166,19 +168,41 @@ body {
 
 .showcase-content h1 {
     color: white;
+    background: url(/assets/images/text_showcase_b.png) no-repeat center center/cover;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
     font-size: 2.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1vh;
 }
 
-.showcase-content .btn {
-    font-size: 1.25rem;
-    padding: 1rem 8rem;
-}
+.s_btn {
+    border: 1px solid gray;
+    border-radius: 10px;
 
-.showcase-content .btn:hover{
-    background-color: orangered;
+    background: rgba(0, 0, 0, 0.375);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
     color: white;
+
+    padding: 1rem 2rem;
+    display: inline-block;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.showcase-content .s_btn {
+    font-size: 1.25rem;
+    padding: 1rem 5rem;
+}
+
+.showcase-content .s_btn:hover{
+    background: rgba(255, 255, 255, 0.75);
+    color: orangered;
 }
 
 .btn {
