@@ -375,8 +375,12 @@ body {
     text-align: center;
 }
 
-#contact .form-box {
-    background: #fff;
+#contact .boxes {
+    display: flex;
+}
+
+#contact .box {
+    background: white;
     box-shadow: 2px 2px 5px gray;
     
     flex: 1;
@@ -451,10 +455,6 @@ body {
 
     background: white;
     border: 0.5px solid #333;
-}
-
-#contact .form-container {
-    position: flex;
 }
 /* #endregion */
 
@@ -629,18 +629,14 @@ body {
         font-size: 1.80rem;
     }
 
-    #contact .form-container {
+    #contact .boxes {
         align-items: center;
         flex-direction: column;
     }
 
-    #contact .form-box {
+    #contact .box {
         width: 37.5vh;
-        font-size: 12px;
-
-        flex: 1;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        background: white;
     }
 
     #contact .contact-btn {
