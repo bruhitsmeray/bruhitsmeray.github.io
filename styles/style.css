@@ -319,6 +319,10 @@ body {
     text-align: center;
 }
 
+#projects .feature {
+    text-decoration: none;
+}
+
 #projects .boxes {
     display: flex;
 }
@@ -725,11 +729,11 @@ footer p {
     }
 
     #social .Tina {
-        font-size: 1.20rem;
+        font-size: 1.15rem;
     }
 
     #social .Tina p {
-        font-size: 1rem;
+        font-size: 0.80rem;
     }
     /* #endregion */
 }
