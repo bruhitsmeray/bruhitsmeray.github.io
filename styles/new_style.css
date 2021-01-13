@@ -35,6 +35,10 @@ body {
     color: red;
 }
 
+.eutera {
+    color: rgb(255, 0, 225);
+}
+
 .bg_light {
     background: #f4f4f4;
     color: #333;
@@ -134,7 +138,7 @@ body {
     margin-left: 10rem;
     margin-right: 10rem;
 
-    background: url(/assets/images/showcase_1.png) no-repeat center center/cover;
+    background: url(/assets/images/G_background.png) no-repeat center center/cover;
 }
 
 #showcase input[name = "r"] {
@@ -152,8 +156,6 @@ body {
     flex-direction: column;
 
     background: rgba(255, 255, 255, 0);
-    /* backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(5px); */
 
     text-align: center;
     align-items: center;
@@ -173,7 +175,7 @@ body {
 
 .showcase-content h1 {
     color: white;
-    background: url(/assets/images/text_showcase_b.png) no-repeat center center/cover;
+    background: url(/assets/images/TEutera.png) no-repeat center center/cover;
 
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
