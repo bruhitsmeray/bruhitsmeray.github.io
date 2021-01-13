@@ -117,9 +117,7 @@ body {
     transition: transform 1s;
 }
 
-.social a:hover {
-    transform: translate(20px, 0);
-}
+
 
 .social i {
     margin-top: 5px;
@@ -136,7 +134,14 @@ body {
     margin-left: 10rem;
     margin-right: 10rem;
 
-    background: url(/assets/images/showcase_b.png) no-repeat center center/cover;
+    background: url(/assets/images/showcase_1.png) no-repeat center center/cover;
+}
+
+#showcase input[name = "r"] {
+    position: relative;
+    margin-bottom: 1vh;
+
+    color: orangered;
 }
 
 .showcase-content {
@@ -377,15 +382,11 @@ body {
 
 #contact .boxes {
     display: flex;
+    align-items: center;
 }
 
-#contact .box {
-    background: white;
-    box-shadow: 2px 2px 5px gray;
-    
+#contact .box {   
     flex: 1;
-    border-radius: 10px;
-    padding: 3rem;
 }
 
 #contact .form-group {
@@ -458,6 +459,54 @@ body {
 }
 /* #endregion */
 
+#social {
+    border: 3px solid orangered;
+    padding: 5rem;
+
+    border-radius: 20px;
+
+    margin: 1rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+#social h2 {
+    margin-bottom: 5rem;
+
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+#social ul {
+    margin-left: auto;
+    text-align: center;
+}
+
+#social a {
+    color: orangered;
+    background: rgb(245, 245, 245);
+    box-shadow: 2px 2px 5px gray;
+
+    border-radius: 20px;
+
+    margin: 5px;
+    padding: 20px;
+}
+
+#social i {
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+#social .Tina {
+    padding-top: 10vh;
+    font-size: 2rem;
+}
+
+#social .Tina p{
+    font-size: 1.25rem;
+}
+
 /* #region FOOTER */
 footer {
     padding: 2.5rem;
@@ -472,10 +521,6 @@ footer p {
 
 @media screen and (min-width: 200px) and (max-width: 960px) and (orientation : portrait)
 {
-    .social { 
-        display: none;
-    }
-
     /* #region NAVBAR_MOBILE */
     .line {
         height: 3px;
@@ -658,6 +703,26 @@ footer p {
 
     #contact .contact-btn {
         font-size: 12px;
+    }
+    /* #endregion */
+
+    /* #region SOCIAL */
+    #social {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #social h2 {
+        font-size: 1.70rem;
+    }
+
+    #social i {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    #social .Tina {
+        font-size: 1.50rem;
     }
     /* #endregion */
 }
