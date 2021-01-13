@@ -474,7 +474,7 @@ body {
     }
 
     #navbar { 
-        position: relative;
+        position: sticky;
     }
 
     .nav-button {
@@ -491,7 +491,7 @@ body {
         height: 100vh;
         width: 100%;
 
-        position: fixed;
+        position: sticky;
         flex-direction: column;
         
         background:rgb(245, 245, 245);
@@ -619,6 +619,7 @@ body {
     }
     /* #endregion */
 
+    /* #region CONTACT_MOBILE */
     #contact {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -645,4 +646,5 @@ body {
     #contact .contact-btn {
         font-size: 12px;
     }
+    /* #endregion */
 }
