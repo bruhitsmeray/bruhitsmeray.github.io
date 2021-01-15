@@ -351,7 +351,6 @@ body {
     font-size: 1rem;
 
     margin-bottom: 1rem;
-    margin-left: 2rem;
 }
 
 #projects .btn:hover{
@@ -465,6 +464,7 @@ body {
 }
 /* #endregion */
 
+/* #region SECTION_SOCIAL*/
 #social {
     border: 3px solid orangered;
     padding: 5rem;
@@ -512,6 +512,7 @@ body {
 #social .Tina p{
     font-size: 1.25rem;
 }
+/* #endregion */
 
 /* #region FOOTER */
 footer {
