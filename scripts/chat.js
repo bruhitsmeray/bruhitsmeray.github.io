@@ -1,5 +1,4 @@
-// const socket = io('http://localhost:2000');
-const socker = io('https://service-5183.something.gg:2000');
+const socker = io('https://service-5183.something.gg -> 0.0.0.0:2000');
 
 const msgForm = document.getElementById('send_container');
 const msgInput = document.getElementById('msg_input');
