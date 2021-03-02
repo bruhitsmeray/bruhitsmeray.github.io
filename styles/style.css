@@ -440,9 +440,6 @@ body {
 
 #social a {
     color: orangered;
-    background: rgb(245, 245, 245);
-    box-shadow: 2px 2px 5px gray;
-    border-radius: 20px;
     margin: 5px;
     padding: 20px;
 }
