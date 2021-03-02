@@ -575,16 +575,18 @@ footer p {
     }
     /* #endregion */
     /* #region PROJECTS_MOBILE */
+    /* IF U WANT TO FINE TUNE THE TEXT SIZE FOR PHONES (THE PROJECTS SECTION) use the font-size from 
+    #projects .box!!! */
     #projects {
         padding: 48px;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin-left: 24px;
+        margin-right: 24px;
     }
     #projects h2 {
         font-size: 26px;
     }
     #projects h3 {
-        font-size: 1.80rem;
+        font-size: 28.8px;
     }
     #projects .box i {
         height: 20px;
@@ -597,8 +599,8 @@ footer p {
     #projects .box {
         width: 37.5vh;
         font-size: 12px;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
     #projects .btn {
         font-size: 13px;
@@ -648,6 +650,7 @@ footer p {
     /* #endregion */
 }
 
+
 @media screen and (max-width: 769px) {
     #projects {
         padding: 10px;
@@ -683,6 +686,11 @@ footer p {
 }
 
 @media screen and (max-width: 1408px) {
+    #projects h3{
+        margin-top: 10px;
+        font-size: 21px;
+    }
+
     #projects .boxes {
         display: flex !important;
         flex-direction: column;
@@ -690,8 +698,12 @@ footer p {
     }
     #projects .box {
         display: flex;
+        font-size: 9.25px;
         flex-direction: column;
         align-items: center;
         width: 70%;
+    }
+    #projects .btn {
+        font-size: 8px;
     }
 }
