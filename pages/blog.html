@@ -2,77 +2,60 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
+    html {
+        background-color: whitesmoke;
+    }
     header {
         display: flex;
     }
     header .user-name {
         margin-left: 10px;
     }
-    header .twitter-follow-button {
+    header .follow-btn {
         display: flex;
         margin-top: 10px;
         margin-left: 24px;
     }
-    header .twitter-follow-button a {
+    header .follow-btn a {
         padding: 5px;
     }
-    header h3, header h4 {
+    header h3, h4 {
         margin: 0;
     }
-    #s_blog {
+    .s_blog {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+
         margin: 30px;
+        padding: 16px;
     }
-    #content p {
+    .content p {
         margin-left: 10px;
         font-size: 20px;
     }
-    #content h2 {
+    .content h2, h3{
         margin-left: 10px;
     }
-    #content hr {
+    .content hr {
         border-style: solid;
         margin: 20px 0;
         opacity: 0.1;
     }
-    #content span {
+    .content span {
         margin-left: 10px;
     }
 
-    #navbar {
-    top: 0;
-    z-index: 1;
-
-    color: white;
-
-    background: rgba(30, 30, 30, 0.65);
-
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-
-    border: 1px solid orangered;
-    border-radius: 10px;
-
-    display: flex;
-    justify-content: space-between;
-
-    margin: 1rem;
-
-    padding: 1.1rem 8rem;
-    position: -webkit-sticky;
-    position: sticky;
-    }
-
-    #navbar ul {
-        display: flex;
-        list-style: none;
-        align-items: center;
+    footer p{
+        text-align: center;
+        color: rgba(0, 0, 0, 1)
     }
 
     .time {
-    color: whitesmoke;
+    color: black;
     
-    font-size: 32px;
-    font-family: 'Arial';
+    font-size: 24px;
+    font-family: 'Helvetica';
 }
 </style>
 
@@ -85,17 +68,8 @@
 </head>
 
 <body id="blog">
-    <nav id="navbar">
-        <ul>
-            <!-- #region E_TIME -->
-            <li class = "time"><span id = "datetime"></span></li>
-            <script type = "text/javascript" src = "/scripts/hour.js"></script>
-            <!-- #endregion -->
-        </ul>
-    </nav>
-
-    <section id="s_blog">
-        <header id="profile">
+    <section class="s_blog">
+        <header class="profile">
             <div class="user-name">
                 <h3>Morar Andrei - Alexandru</h3>
                 <h4>@whiteex</h4>
@@ -104,16 +78,16 @@
                     <a class="twitter-follow-button" href="https://twitter.com/whiiteex_?ref_src=twsrc%5Etfw" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </header>
-        <div id="content">
+        <div class="content">
             <hr>
             <p>Nearly 1 year since my vitals were online on this land. Tasks have been done, but not quite finish. Going into the next year, aftermaths should be revealed. See you later in the remaining of the year.</p>
             <hr>
             <span class=date>10:32 - 21 November 2021</span>
         </div>
     </section>
-    
-    <section id="s_blog">
-        <header id="profile">
+
+    <section class="s_blog">
+        <header class="profile">
             <div class="user-name">
                 <h3>Morar Andrei - Alexandru</h3>
                 <h4>@whiteex</h4>
@@ -122,12 +96,102 @@
                     <a class="twitter-follow-button" href="https://twitter.com/whiiteex_?ref_src=twsrc%5Etfw" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </header>
-        <div id="content">
+        <div class="content">
             <hr>
-            <h2 id="title">IDK</h3>
-            <p>See ya next year..</p>
+            <p>Hi guys, a quick small update, there are 17 days left from 2020 and I finished Cyberpunk! AND IT WAS AWESOME!! Also Back 4 Blood Closed Alpha will be out soon, I can't fucking wait..</p>
             <hr>
-            <span class="date">23:52 - 31 December 2020</span>
+            <span class=date>01:52 - 31 December 2020</span>
+        </div>
+    </section>
+
+    <section class="s_blog">
+        <header class="profile">
+            <div class="user-name">
+                <h3>Morar Andrei - Alexandru</h3>
+                <h4>@whiteex</h4>
+            </div>
+            <div class="follow-btn">
+                    <a class="twitter-follow-button" href="https://twitter.com/whiiteex_?ref_src=twsrc%5Etfw" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </header>
+        <div class="content">
+            <hr>
+            <h2 class="title">IDK MAN 2</h3>
+                <h3>GENERAL STUFF</h3>
+                <p>Hi there guys, so I haven't really worked on the website in the last few days and I probably won't for another few days. I'm trying to come up with a really nice
+                    design for the site before getting back to work. Maybe this is also an excuse to play Cyberpunk 2077 a bit more. I love that game, it's everything that I expected
+                    from it! Also, this is the first post that I write with the new keyboard and I fucking love it.</p>
+
+                <h3>MUSIC & STREAMING</h3>
+                <p>Although I haven't worked on the website, I was thinking the way I wanted to handle livestreams. I love streaming on Twitch but it renders me unable to deliver a
+                    smooth stream while making it look good, so I decided to start streaming on YouTube from now on, I'll make more details available soon. I also have an album in the
+                    works, it's basically a compilation of every good song that I made fron 2019 to 2020. It contains 40 Minutes of good stuff and it will probably release on YouTube,
+                    Spotify & SoundCloud.</p>
+
+                <h3>LAST FEW WORDS</h3>
+                <p>2020 wasn't the best year ever, actually it really sucked. I couldn't write, work on my game or see my friends because of COVID and lack of inspiration. 
+                    But I also learned some stuff about what I'm doing and about me, 2020 can't end any sooner, but I'm kinda scared about 2021 to be honest. Let's just hope it will
+                    be better than this year was. See ya later my friends, stay safe!</p>
+            <hr>
+            <span class="date">23:57 - 11 December 2020</span>
+        </div>
+    </section>
+    
+    <section class="s_blog">
+        <header class="profile">
+            <div class="user-name">
+                <h3>Morar Andrei - Alexandru</h3>
+                <h4>@whiteex</h4>
+            </div>
+            <div class="follow-btn">
+                    <a class="twitter-follow-button" href="https://twitter.com/whiiteex_?ref_src=twsrc%5Etfw" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </header>
+        <div class="content">
+            <hr>
+            <h2 class="title">IDK MAN 2</h3>
+                <p>This is me 15 minutes from NOW. Actually it's easier to do new spaces than I thought. 
+                    Well now all I gotta do is figure out how to make the custom cursor work. FUCK YOU CURSOR!</p>
+
+                <h3>EDIT:</h3>
+                <p>I actually fucked the cursor. So I just grabbed a nice little cursor from the web and now it works. Coding go brrr!</p>
+            <hr>
+            <span class="date">6 December 2020</span>
+        </div>
+    </section>
+
+    <section class="s_blog">
+        <header class="profile">
+            <div class="user-name">
+                <h3>Morar Andrei - Alexandru</h3>
+                <h4>@whiteex</h4>
+            </div>
+            <div class="follow-btn">
+                    <a class="twitter-follow-button" href="https://twitter.com/whiiteex_?ref_src=twsrc%5Etfw" data-show-count="false">Follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </header>
+        <div class="content">
+            <hr>
+            <h2 class="title">IDK MAN</h3>
+                <p>I'm working on the design of this page and I kinda want a blog section. 
+                But I want to make this site to make a portofolio on it, so if any employer will see what I post I will probably loose my job before getting it!</p>
+
+                <h3>EDIT:</h3>
+                <p>I actually did it. I'm gonna have to write my blogs inside the code for now but that's ok. I'm definitely not gonna get hired anywhere.</p>
+
+                <h3>EDIT 2:</h3>
+                <p>Ok, so the only problem now is that this blog section is kinda 'hacked' together and I kinda need to find a way to write new blogs easy. 
+                Because otherwise this will be a pain in the ass. The problem isn't really on writing the blog in-code but with the way that I will create new spaces for the new blog and that's already a problem. 
+                I could just clone properties of this space inside the style.css file but it's not really a good idea because the code will get very bloated very quickly that way.</p>
+            <hr>
+            <span class="date">5 December 2020</span>
         </div>
     </section>
 </body>
+
+<footer>
+        <!-- #region E_TIME -->
+        <p class = "time"><span id = "datetime"></span></p>
+        <script type = "text/javascript" src = "/scripts/hour.js"></script>
+        <!-- #endregion -->
+</footer>
