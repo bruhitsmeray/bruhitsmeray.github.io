@@ -7,6 +7,11 @@ html {
 header {
     display: flex;
 }
+header .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
 header .user-name {
     display: flex;
     flex-direction: column;
@@ -17,7 +22,7 @@ header .follow-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 32px;
+    margin-left: 18px;
 }
 header .follow-btn a {
     padding: 5px;
