@@ -1,150 +1,62 @@
-@font-face { font-family: 'Squirk'; src: url(/assets/fonts/squirk.otf); }
-@font-face { font-family: 'Squealer'; src: url(/assets/fonts/squealer.ttf); }
-
-/* #region GENERAL_STYLING */
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    
-    color: #333;
-    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 html {
-    background: url(/assets/images/wb_background.jpg) no-repeat;
-    background-size: auto 100%;
+    background-color: whitesmoke;
 }
-
-footer {
-    color: white;
-
-    margin: 1rem;
-    padding: 1rem;
+header {
+    display: flex;
 }
-
-footer p {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65)
+header .user-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
 }
-/* #endregion */
-
-.container {
-    max-width: 1100px;
-    margin: auto;
+header .follow-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
 }
-
-/* #region PREMADE_COLORS */
-.bg-light {
-    color: #333;
-
-    background: rgba(185, 185, 185, 0.85);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+header .follow-btn a {
+    padding: 5px;
 }
-
-.bg-dark {
-    color: white;
-
-    background: rgba(60, 60, 60, 0.85);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+header h3, h4 {
+    margin: 0;
 }
-/* #endregion */
-
-/* #region NAVBAR */
-.time{
-    color: whitesmoke;
-    
-    margin: 0 0.05rem;
-    padding-right: 20px;
-    
-    font-size: 32px;
-    font-family: 'Arial';
-}
-
-#navbar {
-    top: 0;
-    z-index: 1;
-
-    color: white;
-
-    background: rgba(30, 30, 30, 0.65);
-
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-
-    border: 1px solid orangered;
+.s_blog {
+    background-color: white;
+    border: 1px solid black;
     border-radius: 10px;
 
-    display: flex;
-    justify-content: space-between;
-
-    margin: 1rem;
-
-    padding: 1.1rem 8rem;
-    position: -webkit-sticky;
-    position: sticky;
+    margin: 30px;
+    padding: 16px;
+}
+.content p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+.content h2, h3{
+    margin-left: 10px;
+}
+.content hr {
+    border-style: solid;
+    margin: 20px 0;
+    opacity: 0.2;
+}
+.content span {
+    margin-left: 10px;
 }
 
-#navbar ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-
-#navbar h2 a {
-    color: whitesmoke;
-
-    font-family: 'Squirk';
-    font-size: 32px;
-
-    padding-right: 20px;
-    text-decoration: none;
-}
-/* #endregion */
-
-#blog {
-    border: 1px solid orangered;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(65, 65, 65);
-    
-    margin: 1.5rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-}
-
-#blog {
-    padding-left: 1.25%;
-    padding-right: 1.25%;
-}
-
-#blog nav {
-    flex: 1;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    
-    color:rgb(235, 235, 235);
-}
-
-#blog h1 {
-    font-size: 40px;
-    font-family: 'Squealer';
+footer p{
     text-align: center;
+    color: rgba(0, 0, 0, 1)
 }
 
-#blog ul h3{
-    font-size: 18px;
-    text-align: center;
-}
+.time {
+color: black;
 
-#blog ul p{
-    margin-left: 25px;
-    text-align: none;
+font-size: 24px;
+font-family: 'Helvetica';
 }
