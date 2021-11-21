@@ -46,8 +46,8 @@
 
     background: rgba(30, 30, 30, 0.65);
 
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     border: 1px solid orangered;
     border-radius: 10px;
@@ -58,13 +58,21 @@
     margin: 1rem;
 
     padding: 1.1rem 8rem;
+    position: -webkit-sticky;
     position: sticky;
-}
+    }
 
-#navbar ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
+    #navbar ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    .time {
+    color: whitesmoke;
+    
+    font-size: 32px;
+    font-family: 'Arial';
 }
 </style>
 
