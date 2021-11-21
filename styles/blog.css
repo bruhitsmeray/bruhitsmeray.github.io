@@ -22,7 +22,6 @@ header .follow-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 18px;
 }
 header .follow-btn a {
     padding: 5px;
