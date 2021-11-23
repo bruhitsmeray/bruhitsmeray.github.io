@@ -355,7 +355,7 @@ body {
     align-items: center;
 }
 
-#contact .box {
+#contact .contact-tile {
     flex: 1;
 }
 
@@ -616,7 +616,7 @@ footer p {
         align-items: center;
         flex-direction: column;
     }
-    #contact .box {
+    #contact .contact-tile {
         width: 37.5vh;
     }
     #contact .form-group input,
