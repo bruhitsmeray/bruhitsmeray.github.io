@@ -76,6 +76,12 @@ body {
     text-align: center;
 }
 
+#navbar hr {
+    border-style: solid;
+    margin: 20px 0;
+    opacity: 0.2;
+}
+
 #main-doc {
     position: absolute;
     margin: 0 0 110px 310px;
