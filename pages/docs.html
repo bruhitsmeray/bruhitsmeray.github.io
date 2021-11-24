@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "ie-edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <title>Documentation</title>
+        <link rel = "stylesheet" href = "/styles/docs.css">
+        <link rel = "icon" href = "assets/images/logo.png">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header>Aleph Docs</header>
+            <ul class = "nav-links">
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Instance">Game Instance</a></li>
+                <li><a href="#Notifications">Notifications</a></li>
+                <li><a href="#Tasks">Tasks</a></li>
+                <li><a href="#Subtitles">Subtitles</a></li>
+                <li><a href="#XPSystem">XP System</a></li>
+                <li><a href="#Health">Health System</a></li>
+                <li><a href="#Energy">Energy System</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p id="p0">Aleph is an Unreal Engine 4 template project, packed with mostly code and BPs
+                to help you kickstart your project.</p>
+                    <p id="p0">This project and documentation is currently
+                based on Unreal Engine 4.27.1. A future upgrade to Unreal Engine 5 might come
+                at a later date.</p>
+                </article>
+            </section>
+
+            <section id="Instance">
+                <header>Game Instance</header>
+                <article>
+                    <p id="p0">In Aleph a lot of important stuff is kept inside the game instance. Some variables
+                    might be moved in another files later down the line. Here you can also find some functions
+                    to help you access Subtitles, Notifications and Tasks with more ease. In the game instance
+                    you can also find a drop-down menu that lets you select the HUD that will be used in-game.
+                    </p>
+                    <br><p id="p0">These are the HUDs available right now in Aleph:</p>
+                    <code>
+                        <p id="p0">Classic</p>
+                        <p id="p0">Aleph (Default)</p>
+                        <p id="p0">Alternative</p>
+                    </code>
+                    <br><p id="p0">These are some of the vars available in a newer in-development version of Aleph:</p>
+                    <code>
+                        <p id="p0">// Gameplay</p>
+                        <p id="p1">bool bAllowDamage = true;</p>
+                        <p id="p1">bool bAllowAbilities = true;</p>
+                        <p id="p1">bool bUseTasks = true;</p>
+                        <p id="p1">bool bUseXP = true;</p>
+
+                        <p id="p0">// Settings</p>
+                        <p id="p1">bool bHoldUse = true;</p>
+                        <p id="p1">bool bHoldSprint = false;</p>
+                        <p id="p1">bool bHoldCrouch = true;</p>
+
+                        <p id="p1">bool bUseSubsCC = true;</p>
+                        <p id="p1">bool bUseSubs = false;</p>
+                        <p id="p1">bool bUseCC = false;</p>
+
+                        <p id="p0">// Other</p>
+                        <p id="p1">bool bUseDevMode = true;</p>
+                    </code>
+                </article>
+            </section>
+
+            <section id="Notifications">
+                <header>Notifications</header>
+                <article>
+                    <p id="p0">Article not available.</p>
+                </article>
+            </section>
+
+            <section id="Tasks">
+                <header>Tasks</header>
+                <article>
+                    <p id="p0">Article not available.</p>
+                </article>
+            </section>
+
+            <section id="Subtitles">
+                <header>Subtitles</header>
+                <article>
+                    <p id="p0">Article not available.</p>
+                </article>
+            </section>
+
+            <section id="XPSystem">
+                <header>XP System</header>
+                <article>
+                    <p id="p0">The XP System uses a few simple variables for basic leveling. 
+                Here are some examples and the defaults in the projects. Please note that the XP System
+                is not yet in any released version of Aleph be it on GameJolt on GitHub.</p>
+                </article>
+                <code>
+                    <p id="p0">int CurrentXP; // No pre-assigned value </p>
+                    <p id="p0">int RequiredXP = 75; </p>
+                    <p id="p0">int XPMultiplier = 2; </p>
+
+                    <p id="p0">int Level; </p>
+                </code>
+            </section>
+
+            <section id="Health">
+                <header>Health System</header>
+                <article>
+                    <p id="p0">Article not available.</p>
+                </article>
+            </section>
+
+            <section id="Energy">
+                <header>Energy System</header>
+                <article>
+                    <p id="p0">Article not available.</p>
+                </article>
+            </section>            
+        </main>
+        <script src = "/scripts/main.js"></script>
+    </body>
+</html>
