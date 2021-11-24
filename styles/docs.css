@@ -53,16 +53,21 @@ body {
 }
 
 .nav-links li a:hover {
-    background: gray;
+    background-color: gray;
     color: whitesmoke;
 }
 
 #navbar header {
+    background-color: gray;
+    border-radius: 5px;
     color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: thin;
 
     margin: 10px;
+    padding: 10px 15px 10px 15px;
     text-align: center;
 }
 
@@ -73,11 +78,25 @@ body {
 }
 
 #main-doc header {
-    background: grey;
+    background-color: grey;
     border-radius: 5px;
-
     color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
+
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    text-align: left;
+}
+
+#main-doc h3 {
+    background-color: grey;
+    border-radius: 5px;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 
     margin: 10px;
     padding: 10px 15px 10px 15px;
@@ -103,4 +122,18 @@ code {
     margin: 10px;
     padding: 15px;
     position: relative;
+}
+
+footer {
+    color: black;
+    padding: 20px;
+}
+
+footer p {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.cdate {
+    font-size: 12px;
 }
