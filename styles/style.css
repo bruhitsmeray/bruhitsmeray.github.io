@@ -1,78 +1,35 @@
-@font-face {
-    font-family: 'Squirk';
-    src: url(assets/fonts/squirk.otf);
-}
-
-/* #region GENERAL_STYLING */
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    background: whitesmoke;
+    background-color: whitesmoke;
     color: #333;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
 }
 
 .container {
     max-width: 1100px;
     margin: auto;
 }
-/* #region GENERAL_COLORS */
 
-.text-primary {
-    color: orangered;
-}
-
-.spotify {
-    color: green;
-}
-
-.ytmusic {
-    color: red;
-}
-
-.eutera {
-    color: rgb(255, 0, 225);
-}
-
-.bg_light {
-    background: #f4f4f4;
-    color: #333;
-}
-
-.bg_dark {
-    background: #333;
-    color: white;
-}
-
-
-/* #endregion */
-
-
-/* #endregion */
-
-
-/* #region NAVBAR */
 #navbar {
-    z-index: 1;
-    top: 0;
+    background-color: rgb(245, 245, 245);
+    color: black;
 
     height: 8vh;
-    
+    z-index: 0;
+    top: 0;
+
     position: -webkit-sticky;
     position: sticky;
-
-    color: black;
-    background: rgb(245, 245, 245);
 }
 
-/* #region NAVBAR_LINKS */
 .nav-links {
     height: 100%;
-
     display: flex;
     list-style: none;
 
@@ -89,118 +46,67 @@ body {
 }
 
 .nav-links li a:hover {
-    background: linear-gradient(to bottom, pink, whitesmoke);
-    color: white;
-
-    font-size: 24px;
+    background: linear-gradient(to top, pink, rgb(225, 225, 225));
+    font-size: 20px;
 }
-/* #endregion */
-/* #endregion */
 
-/* #region SHOWCASE */
 #welcome-section {
+    background: linear-gradient(to right top, pink, rgb(200, 200, 200));
+    border-radius: 10px;
+
+    margin: 16px 160px 16px 160px;
     height: 100%;
-    border-radius: 20px;
-    margin: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    background: linear-gradient(to right bottom, #c365df, #796ceb)
 }
 
 .welcome-tile {
-    height: 91.35vh;
-    border-radius: 20px;
+    border-radius: 10px;
+
     display: flex;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0);
-    text-align: center;
-    align-items: center;
+    height: 91.35vh;
+
     justify-content: center;
+    text-align: center;
 }
 
 .welcome-tile img {
-    height: 128px;
+    border: 1px solid rgba(128, 128, 128, 0.6);
     border-radius: 100%;
     background: white;
-    border: 2px solid gray;
-    margin-top: 5px;
-    margin-left: auto;
+
+    height: 128px;
 }
 
 .welcome-tile h1 {
-    color: white;
-    padding-bottom: 1vh;
+    color: whitesmoke;
+    font-size: 40px;
 
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.125);
-    font-size: 2.5rem;
+    padding-bottom: 1vh;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.225);
 }
 
 .welcome-tile h3 {
-    color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.125);
+    color: whitesmoke;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.225);
 }
 
-.s_btn {
-    border: 1px solid gray;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.375);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    color: white;
-    padding: 1rem 2rem;
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.showcase-content .s_btn {
-    font-size: 1.25rem;
-    padding: 1rem 5rem;
-}
-
-.showcase-content .s_btn:hover {
-    background: rgba(255, 255, 255, 0.75);
-    color: orangered;
-}
-
-.btn {
-    border: 1px solid orangered;
-    border-radius: 25px;
-    background: rgba(0, 0, 0, 0.275);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: orangered;
-    padding: 1rem 2rem;
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-}
-/* #endregion */
-
-/* #region SECTION_PROJECTS */
 #projects {
-    border: 3px solid orangered;
-    padding: 5rem;
-    border-radius: 20px;
-    margin: 1rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    border: 3px solid grey;
+    border-radius: 10px;
+
+    margin: 16px 160px 16px 160px;
+    padding: 80px;
 }
 
 #projects h2 {
-    font-size: 3rem;
-    margin-bottom: 3rem;
+    font-size: 32px;
+    margin-bottom: 64px;
     text-align: center;
 }
 
 #projects h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 24px;
+    margin-bottom: 32px;
     text-align: center;
-}
-
-#projects .feature {
-    text-decoration: none;
 }
 
 #projects .boxes {
@@ -208,62 +114,60 @@ body {
     display: grid;
     -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
-    grid-row: 1/6;
     grid-column-gap: 20px;
+    grid-row: 1/6;
     grid-row-gap: 20px;
 }
 
 #projects .project-tile {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px gray;
-    padding: 3rem;
+    box-shadow: 2px 2px 4px gray;
+
     flex: 1;
-    font-size: 0.85rem;
+    font-size: 16px;
+
+    padding: 64px;
 }
 
 #projects .project-tile i {
-    color: orangered;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    color: gray;
+    margin-bottom: 14px;
+    padding: 16px;
+}
+
+#projects .feature {
+    text-decoration: none;
 }
 
 #projects .btn {
     background: white;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    color: gray;
+    display: inline-block;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 16px 32px;
+    text-decoration: none;
 }
 
 #projects .btn:hover {
-    background-color: orangered;
+    background-color: grey;
     color: white;
 }
-/* #endregion */
 
-
-/* #region SECTION_CONTACT */
 #contact {
-    border: 3px solid orangered;
-    padding: 5rem;
-    border-radius: 20px;
-    margin: 1rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    border: 3px solid grey;
+    border-radius: 10px;
+
+    margin: 16px 160px 16px 160px;
+    padding: 80px;
 }
 
-#contact h2 {
-    margin-bottom: 8rem;
-    font-size: 3rem;
-    text-align: center;
-}
-
-#contact h3 {
-    margin: 2rem 0;
-    font-size: 3rem;
-    text-align: center;
-}
-
-#contact .boxes {
+#contact .box {
     display: flex;
     align-items: center;
 }
@@ -272,73 +176,70 @@ body {
     flex: 1;
 }
 
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
 #contact .form-group {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 #contact .form-group select {
-    width: 80%;
     background: #fff;
     border-radius: 10px;
-    padding: 1rem;
+
+    font-size: 20px;
+
     margin-left: 10%;
-    font-size: 1.2rem;
+    padding: 16px;
+
+    width: 80%;
 }
 
 #contact .form-group label {
     display: block;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
 }
 
-#contact .form-group input,
-#contact .form-group textarea {
-    width: 80%;
-    border: 0.5px solid #333;
+#contact .form-group input, textarea {
+    border: 1px solid #333;
     border-radius: 10px;
-    padding: 1rem;
-    margin-left: 10%;
-    font-size: 1.2rem;
-}
 
-#contact .form-group textarea {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 16px;
+    width: 100%;
 }
 
 #contact .contact-btn {
-    width: 80%;
-    display: inline-block;
-    color: white;
-    cursor: pointer;
-    background: orangered;
-    border: none;
+    border: 1px solid #333;
     border-radius: 10px;
-    padding: 1rem 3rem;
-    margin-left: 10%;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
+
+    cursor: pointer;
+    display: inline-block;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 2rem 10%;
+    padding: 16px 64px;
+    width: 85%;
 }
 
 #contact .contact-btn:hover {
-    color: black;
-    background: white;
-    border: 0.5px solid #333;
-}
-/* #endregion */
-
-/* #region FOOTER */
-footer {
-    padding: 2.5rem;
+    background: gray;
+    border: 1px solid #333;
     color: white;
 }
 
-footer p {
-    text-align: center;
+footer {
     color: black;
+    padding: 40px;
 }
-/* #endregion */
+
+footer p {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
 
 @media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait) {
     /* #region NAVBAR_MOBILE */
