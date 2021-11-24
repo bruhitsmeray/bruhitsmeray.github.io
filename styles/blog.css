@@ -36,6 +36,10 @@ html {
     opacity: 0.2;
 }
 
+.nav-links i {
+    margin-right: 10px;
+}
+
 .nav-links li {
     border-bottom: 1px solid;
     border-color: gray;
