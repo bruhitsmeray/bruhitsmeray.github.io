@@ -135,6 +135,15 @@ code {
     position: relative;
 }
 
+hr {
+    margin: 10px 0 15px 0;
+}
+
+object {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 footer {
     color: black;
     padding: 20px;
