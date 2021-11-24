@@ -19,6 +19,11 @@ body {
     text-indent: 128px;
 }
 
+#nv {
+    font-style: italic;
+    text-indent: 64px;
+}
+
 #navbar {
     border-right: solid;
     border-color: gray;
