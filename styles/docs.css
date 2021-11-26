@@ -193,6 +193,10 @@ footer p {
         pointer-events: none;
     }
 
+    code {
+        font-size: 8px;
+    }
+
     object {
         opacity: 0;
         pointer-events: none;

@@ -168,3 +168,39 @@ footer p {
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
 }
+
+@media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait) {
+    #p0 {
+        text-indent: 32px;
+    }
+    
+    #p1 {
+        text-indent: 64px;
+    }
+    
+    #nv {
+        font-style: italic;
+        text-indent: 16px;
+    }
+
+    #main {
+        margin: 0 0 0 0;
+    }
+    
+    #navbar {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    code {
+        font-size: 8px;
+    }
+
+    object {
+        opacity: 0;
+        pointer-events: none;
+
+        height: 0;
+        width: 0;
+    }
+}
