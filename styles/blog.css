@@ -18,9 +18,46 @@ html {
     text-indent: 64px;
 }
 
+.accordion_btn {
+    background: #333;
+    
+    border: none;
+    border-radius: 5px;
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+    display: block;
+    margin-top: 10px;
+
+    outline: none;
+    padding: 14px;
+
+    text-align: left;
+    width: 100%;
+}
+
+.accordion_btn::after {
+    content: '\25be';
+    float: right;
+    transform: scale(1.5);
+}
+
+.accordion_btn--active { background: #444; color: rgb(235, 235, 235) }
+.accordion_btn--active::after { content: '\25b4' }
+
+.nav-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
 #navbar {
     border-right: solid;
     border-color: gray;
+
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     position: fixed;
     top: 0px;
@@ -28,6 +65,13 @@ html {
 
     width: 300px;
     height: 100%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navbar::-webkit-scrollbar {
+    display: none;
 }
 
 #navbar hr {
@@ -41,6 +85,7 @@ html {
 }
 
 .nav-links li {
+    border-radius: 5px;
     border-bottom: 1px solid;
     border-color: gray;
 

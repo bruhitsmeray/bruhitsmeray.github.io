@@ -12,16 +12,54 @@ body {
 }
 
 #p0 {
-    text-indent: 64px;
+    text-indent: 128px;
 }
 
 #p1 {
+    text-indent: 64px;
+}
+
+#n0 {
     text-indent: 128px;
+    font-size: 14px;
 }
 
 #nv {
     font-style: italic;
     text-indent: 64px;
+}
+
+.accordion_btn {
+    background: #333;
+    
+    border: none;
+    border-radius: 5px;
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+    display: block;
+    margin-top: 10px;
+
+    outline: none;
+    padding: 14px;
+
+    text-align: left;
+    width: 100%;
+}
+
+.accordion_btn::after {
+    content: '\25be';
+    float: right;
+    transform: scale(1.5);
+}
+
+.accordion_btn--active { background: #444; color: rgb(235, 235, 235) }
+.accordion_btn--active::after { content: '\25b4' }
+
+.content {
+    max-height: 0;
+    overflow: hidden;
 }
 
 #navbar {
@@ -38,15 +76,38 @@ body {
 
     height: 100%;
     width: 300px;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #navbar::-webkit-scrollbar {
     display: none;
 }
 
+#navbar h3 {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: thin;
+
+    margin: 20px 10px 0px 10px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+}
+
+#navbar hr {
+    border-style: solid;
+    margin: 20px 0;
+    opacity: 0.2;
+}
+
 .nav-links li {
+    border-radius: 5px;
     border-bottom: 1px solid;
-    border-color: gray;
 
     color: black;
     list-style: none;
@@ -56,6 +117,8 @@ body {
 }
 
 .nav-links li a {
+    border-radius: 5px;
+
     color: black;
     cursor: pointer;
 
@@ -66,32 +129,12 @@ body {
 }
 
 .nav-links li a:hover {
-    background-color: gray;
+    background-color: #333;
     color: whitesmoke;
 }
 
 .nav-links i {
     margin-right: 10px;
-}
-
-#navbar h3 {
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: thin;
-
-    margin: 20px 10px 20px 10px;
-    padding: 10px 15px 10px 15px;
-    text-align: center;
-}
-
-#navbar hr {
-    border-style: solid;
-    margin: 20px 0;
-    opacity: 0.2;
 }
 
 #main-doc {

@@ -13,11 +13,19 @@
 <body id="blog">
     <nav id="navbar">
         <h3>Others</h3>
-        <ul class="nav-links">
-            <li><a href="/index.html"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="/pages/docs.html"><i class="fas fa-passport"></i>Docs</a></li>
-            <li><a href="https://github.com/xwhiteex" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-        </ul>
+        <button type="button" class="accordion_btn">Site</button>
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="/index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/pages/docs.html"><i class="fas fa-passport"></i>Docs</a></li>
+            </ul>
+        </div>
+        <button type="button" class="accordion_btn">Profiles</button>
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="https://github.com/xwhiteex" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+            </ul>
+        </div>
         <footer>
             <p class = "time"><span id = "datetime"></span></p>
             <script type = "text/javascript" src = "/scripts/hour.js"></script>
@@ -187,4 +195,5 @@
             </div>
         </section>
     </main>
+    <script src="/scripts/dropdown.js"></script>
 </body>
