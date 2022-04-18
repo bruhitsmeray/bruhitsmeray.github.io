@@ -1,0 +1,74 @@
+.logo{    
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.navbar{
+    width: 100%;
+    margin: 30px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.basic:hover{
+    border-bottom: 2px solid orangered;
+}
+
+.special {
+    border: 2px solid orangered;
+    border-radius: 10px;
+}
+
+.special:hover{
+    background: orangered;
+}
+
+.message{
+    color: white;
+    background:orangered;
+    border-radius: 5px;
+
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.message h3{
+    background: orangered;
+}
+
+.message a{
+    background: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    flex: 1;
+    font-weight: 700;
+
+    text-align: right;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+
+    margin-left: 30px;
+} 
+
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+
+    padding: 15px 20px;
+    text-decoration: none;
+}
