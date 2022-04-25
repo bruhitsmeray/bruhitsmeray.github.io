@@ -5,23 +5,6 @@
     padding: 20px 0px;
 }
 
-.welcome-heading{
-    margin: 20px 0px;
-}
-
-.welcome-heading h1{
-    font-size: 3.5rem;
-    line-height: 72px;
-}
-
-.welcome-heading h1 span{
-    background-color: white;
-    border-radius: 10px 0px 10px 0px;
-
-    color: rgba(20, 20, 20, 1);
-    padding: 6px 12px;
-}
-
 .welcome-filter{
     align-items: center;
     color: #78809c;
@@ -96,4 +79,12 @@
     color: #9f9f9f;
     letter-spacing: 1px;
     padding: 5px 0px 5px 0px;
+}
+
+/*=================================*/
+
+@media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait){
+    .welcome-container{
+        grid-template-columns: 1fr;
+    }
 }

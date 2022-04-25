@@ -1,18 +1,16 @@
-#updates{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px 0px;
+iframe{
+    border: 1px solid black;
+    border-radius: 10px
 }
 
-.update-filter{
+.video-filter{
     align-items: center;
     color: #78809c;
     display: flex;
     margin: 10px 0px 20px 0px;
 }
 
-.update-filter li{
+.video-filter li{
     color: white;
     cursor: pointer;
 
@@ -22,57 +20,50 @@
     user-select: none;
 }
 
-.update-filter li:hover{
+.video-filter li:hover{
     opacity: 0.7;
     transform: all ease 0.1s;
 }
 
-.update-filter-active{
+.video-filter-active{
     border-bottom: 1px solid orangered;
+    padding: 10px;
 }
 
-.update-header{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr;
-    margin: 10px 0px 50px 0px;
-}
-
-.update-container{
+.video-container{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
     margin: 10px 0px 50px 0px;
 }
 
-.update-box{
+.video-box{
     border: 2px solid orangered;
     border-radius: 5px;
     padding: 0px 10px;
     transition: all ease 0.1s;
 }
 
-.update-box:hover{
+.video-box:hover{
     border: 2px solid #9f9f9f;
     opacity: 0.8;
     transform: all ease 0.1s;
 }
 
-.update-text{
+.video-text{
     display: flex;
     flex-direction: column;
     padding: 10px 3px;
 }
 
-.update-text .category{
+.video-text .category{
     color: white;
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.update-text strong{
+.video-text strong{
     color: white;
     font-size: 1.4rem;
     font-weight: 500;
@@ -80,12 +71,12 @@
     margin: 5px 0px;
 }
 
-.update-text .description{
+.video-text .description{
     color: #9f9f9f;
     padding: 5px 0px 10px 0px;
 }
 
-.update-text .posttime{
+.video-text .posttime{
     color: #9f9f9f;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -93,15 +84,8 @@
 
 /*=================================*/
 
-::selection{
-    background-color: orangered;
-    color: rgba(20, 20, 20, 1);
-}
-
-/*=================================*/
-
 @media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait){
-    .update-container{
+    .video-container{
         grid-template-columns: 1fr;
     }
 }
