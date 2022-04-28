@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    background-color: rgba(20, 20, 20, 1);
     font-family: sans-serif;
 
     margin: 0;
@@ -8,9 +7,9 @@
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
+    background-color: rgb(40, 40, 40);
 
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
