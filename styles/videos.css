@@ -1,5 +1,4 @@
 iframe{
-    border: 1px solid black;
     border-radius: 10px
 }
 
@@ -11,13 +10,17 @@ iframe{
 }
 
 .video-filter li{
-    color: white;
+    color: rgb(40, 40, 40);
     cursor: pointer;
 
     letter-spacing: 2px;
     margin: 0px 5px;
     text-transform: uppercase;
     user-select: none;
+}
+
+body.dark .video-filter li{
+    color: white;
 }
 
 .video-filter li:hover{
@@ -37,20 +40,6 @@ iframe{
     margin: 10px 0px 50px 0px;
 }
 
-.video-box{
-    border: 2px solid orangered;
-    border-radius: 5px;
-    box-shadow: 6px 4px rgba(20, 20, 20, 0.2);
-    padding: 0px 10px;
-    transition: all ease 0.1s;
-}
-
-.video-box:hover{
-    border: 2px solid #9f9f9f;
-    opacity: 0.8;
-    transform: all ease 0.1s;
-}
-
 .video-text{
     display: flex;
     flex-direction: column;
@@ -58,29 +47,45 @@ iframe{
 }
 
 .video-text .category{
-    color: white;
+    color: rgb(40, 40, 40);
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.video-text strong{
+body.dark .video-text .category{
     color: white;
+}
+
+.video-text strong{
+    color: rgb(40, 40, 40);
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.7px;
     margin: 5px 0px;
 }
 
+body.dark .video-text strong{
+    color: white;
+}
+
 .video-text .description{
-    color: #9f9f9f;
+    color: #3a3a3a;
     padding: 5px 0px 10px 0px;
 }
 
-.video-text .posttime{
+body.dark .video-text .description{
     color: #9f9f9f;
+}
+
+.video-text .posttime{
+    color: #3a3a3a;
     font-size: 0.8rem;
     letter-spacing: 1px;
+}
+
+body.dark .video-text .posttime{
+    color: #9f9f9f;
 }
 
 /*=================================*/

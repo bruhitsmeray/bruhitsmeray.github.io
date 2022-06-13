@@ -7,6 +7,7 @@
         <title>whiteex</title>
         <link rel="icon" href="assets/logo.png">
 
+
         <link rel="stylesheet" href="./styles/navbar.css">
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/welcome.css">
@@ -15,17 +16,20 @@
     </head>
     <body>
         <div class="container">
-            <div class="navbar">
+        <!--New navbar code here -->
+            <header>
                 <a href="index.html" class="logo">whiteex</a>
                 <nav>
-                    <ul>
-                        <li><a href="https://dev-whiteex.github.io/blog/" class="basic" target="_blank">Blog</a></li>
-                        <li><a href="https://dev-whiteex.github.io/aleph-docs/" class="basic" target="_blank">Docs</a></li>
-                        <li><a href="https://linktr.ee/whiteex" class="basic" target="_blank">Linktree</a></li>
-                        <li><a href="https://github.com/dev-whiteex" class="special" target="_blank">GitHub</a></li>
+                    <ul class="nav-links">
+                        <li><a href="https://dev-whiteex.github.io/blog/" target="_blank">Blog</a></li>
+                        <li><a href="https://ko-fi.com/whiteex" target="_blank">Buy me a coffee</a></li>
+                        <li><a href="https://github.com/dev-whiteex" target="_blank">Github</a></li>
                     </ul>
                 </nav>
-            </div>
+                <input type="checkbox" class="checkbox" id="checkbox" checked>
+                <label for="checkbox" class="label"><div class="ball"></div></label>
+            </header>
+
             <div class="message">
                 <h3><a href="https://discord.com/oauth2/authorize?client_id=772944646195511297&scope=bot&permissions=2129853695" target="_blank">Eutera 4.5.2 is now available.</a></h3>
             </div>
@@ -42,18 +46,18 @@
                 </ul>
 
                 <div class="welcome-container">
-                    <a href="#" class="welcome-box about">
+                    <div href="#" class="welcome-box about">
                         <div class="welcome-text">
                             <span class="category">About Me</span>
                             <strong>Biography</strong>
                             <span class="description">
-                                <p>Hello, I'm Andrew aka "whiteex" and I'm an 18 years old beginner programmer from Romania.</p>
-                                <p><br>I work on a lot of different projects, such as the Discord bot "Eutera" and my Unreal Engine 5 plugins "conSole" and "WiMan".</p>
+                                <p>Hello, I'm Andrew aka "whiteex" and I'm a 19 years old beginner programmer from Romania.</p>
+                                <p><br>I work on a lot of different projects, such as the Discord bot "Eutera" and my Unreal Engine plugins "conSole" and "WiMan".</p>
                             </span>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="welcome-box projects">
+                    <div href="#" class="welcome-box projects">
                         <div class="welcome-text">
                             <span class="category">Projects</span>
                             <strong>Decay</strong>
@@ -62,9 +66,9 @@
                                 <p><br>Currently there is no known release date for this project.</p>
                             </span>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="welcome-box projects">
+                    <div href="#" class="welcome-box projects">
                         <div class="welcome-text">
                             <span class="category">Projects</span>
                             <strong>Eutera</strong>
@@ -73,7 +77,7 @@
                                 <p><br>Eutera (4.5.2) has been released in March 14th 2022 and is the latest version to date.</p>
                             </span>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
 
@@ -89,7 +93,7 @@
                 </ul>
 
                 <div class="video-container">
-                    <a href="" class="video-box showcases">
+                    <div href="" class="video-box showcases">
                         <div class="video-text">
                             <span class="category">Showcase</span>
                         </div>
@@ -101,9 +105,9 @@
                             </span>
                             <span class="posttime">June 24th, 2021 • whiteex</span>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="" class="video-box showcases">
+                    <div class="video-box showcases">
                         <div class="video-text">
                             <span class="category">Showcase</span>
                         </div>
@@ -115,13 +119,15 @@
                             </span>
                             <span class="posttime">May 24th, 2021 • whiteex</span>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="" class="video-box showcases">
+                    <div class="video-box showcases">
                         <div class="video-text">
                             <span class="category">Showcase</span>
                         </div>
+                        
                         <iframe width=100% height="315" src="https://www.youtube-nocookie.com/embed/_MSIiP_tfEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
                         <div class="video-text">
                             <strong>DECAY 2.0: EDS</strong>
                             <span class="description">
@@ -129,7 +135,7 @@
                             </span>
                             <span class="posttime">April 28th, 2021 • whiteex</span>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
 
@@ -160,6 +166,35 @@
                     <a href="https://dev-whiteex.github.io/aleph-docs/" class="update-box others" target="_blank">
                         <div class="update-text">
                             <span class="category">Others • Latest</span>
+                            <strong>Light mode is here!</strong>
+                            <span class="description">
+                                <p>
+                                    Let light guide your way as this page now features a light mode and a re-designed navbar. Now that every part of this page has it's own
+                                    .css file, it is much more easier to modify or redesign specific parts of the page. That's it for now, keep an eye out for some plugin news
+                                    in the near future. Until then, stay safe!
+                                </p>
+                            </span>
+                            <span class="posttime">June 6th, 2022 • whiteex</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="update-container">
+                <!--
+                    <a href="#" class="update-box others" target="_blank">
+                        <div class="update-text">
+                            <span class="category">Category</span>
+                            <strong>Title</strong>
+                            <span class="description">
+
+                            </span>
+                            <span class="posttime">Month Day, Year</span>
+                        </div>
+                    </a>
+                -->
+                    <a href="https://dev-whiteex.github.io/aleph-docs/" class="update-box others" target="_blank">
+                        <div class="update-text">
+                            <span class="category">Others • Latest</span>
                             <strong>The new docs page is now available.</strong>
                             <span class="description">
                                 <p>
@@ -174,19 +209,7 @@
                             <span class="posttime">May 3rd, 2022 • whiteex</span>
                         </div>
                     </a>
-                </div>
 
-                <div class="update-container">
-                <!--
-                    <a href="#" class="update-box others" target="_blank">
-                        <div class="update-text">
-                            <span class="category">Category</span>
-                            <strong>Title</strong>
-                            <span class="description"></span>
-                            <span class="posttime">Month Day, Year</span>
-                        </div>
-                    </a>
-                -->
                     <a href="https://dev-whiteex.github.io/blog/" class="update-box others" target="_blank">
                         <div class="update-text">
                             <span class="category">Others</span>
@@ -227,7 +250,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="update-box others" target="_blank">
+                    <div class="update-box others" target="_blank">
                         <div class="update-text">
                             <span class="category">Others</span>
                             <strong>Announcing an update.</strong>
@@ -241,7 +264,7 @@
                             </span>
                             <span class="posttime">March 18th, 2022 • whiteex</span>
                         </div>
-                    </a>
+                    </div>
 
                     <a href="https://github.com/aleph-collective/conSole/releases/tag/1.3.0" class="update-box plugins" target="_blank">
                         <div class="update-text">
@@ -287,9 +310,10 @@
             <p>2022</p>
         </footer>
 
+        <script src="scripts/preferences/dark.js" type="module"></script>
         <script src="scripts/jquery.js"></script>
-        <script src="scripts/w_menu.js" type="text/javascript"></script>
-        <script src="scripts/v_menu.js" type="text/javascript"></script>
-        <script src="scripts/u_menu.js" type="text/javascript"></script>
+        <script src="scripts/menus/w_menu.js" type="text/javascript"></script>
+        <script src="scripts/menus/v_menu.js" type="text/javascript"></script>
+        <script src="scripts/menus/u_menu.js" type="text/javascript"></script>
     </body>
 </html>

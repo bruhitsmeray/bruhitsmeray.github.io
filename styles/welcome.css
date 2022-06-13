@@ -13,7 +13,7 @@
 }
 
 .welcome-filter li{
-    color: white;
+    color: rgb(40, 40, 40);
     cursor: pointer;
 
     letter-spacing: 2px;
@@ -22,13 +22,17 @@
     user-select: none;
 }
 
+body.dark .welcome-filter li{
+    color: white;
+} 
+
 .welcome-filter li:hover{
     opacity: 0.7;
     transform: all ease 0.1s;
 }
 
 .welcome-filter-active{
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid rgba(255, 69, 0, 1);
     padding: 10px;
 }
 
@@ -40,16 +44,15 @@
 }
 
 .welcome-box{
-    border: 2px solid orangered;
+    border: 2px solid rgba(255, 69, 0, 1);
     border-radius: 5px;
-    box-shadow: 6px 4px rgba(20, 20, 20, 0.2);
+    box-shadow: 4px 2px rgba(20, 20, 20, 0.2);
     padding: 0px 10px;
     transition: all ease 0.1s;
 }
 
 .welcome-box:hover{
-    border: 2px solid #9f9f9f;
-    opacity: 0.8;
+    border: 2px solid rgba(160, 160, 160, 0.6);
     transform: all ease 0.1s;
 }
 
@@ -60,14 +63,18 @@
 }
 
 .welcome-text .category{
-    color: white;
+    color: rgb(40, 40, 40);
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.welcome-text strong{
+body.dark .welcome-text .category{
     color: white;
+} 
+
+.welcome-text strong{
+    color: rgb(40, 40, 40);
     font-size: 1.4rem;
     font-weight: 500;
     
@@ -76,10 +83,18 @@
     padding: 5px 0px 0px 0px;
 }
 
+body.dark .welcome-text strong{
+    color: white;
+}
+
 .welcome-text .description{
-    color: #9f9f9f;
+    color: #3a3a3a;
     letter-spacing: 1px;
     padding: 5px 0px 5px 0px;
+}
+
+body.dark .welcome-text .description{
+    color: #9f9f9f;
 }
 
 /*=================================*/

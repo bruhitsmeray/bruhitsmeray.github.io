@@ -13,7 +13,7 @@
 }
 
 .update-filter li{
-    color: white;
+    color: rgb(40, 40, 40);
     cursor: pointer;
 
     letter-spacing: 2px;
@@ -22,13 +22,18 @@
     user-select: none;
 }
 
+body.dark .update-filter li{
+    color: white;
+}
+
 .update-filter li:hover{
     opacity: 0.7;
     transform: all ease 0.1s;
 }
 
 .update-filter-active{
-    border-bottom: 1px solid orangered;
+    border-bottom: 1px solid rgba(255, 69, 0, 1);
+    padding: 10px;
 }
 
 .update-header{
@@ -46,15 +51,15 @@
 }
 
 .update-box{
-    border: 2px solid orangered;
+    border: 2px solid rgba(255, 69, 0, 1);
     border-radius: 5px;
-    box-shadow: 6px 4px rgba(20, 20, 20, 0.2);
+    box-shadow: 4px 2px rgba(20, 20, 20, 0.2);
     padding: 0px 10px;
     transition: all ease 0.1s;
 }
 
 .update-box:hover{
-    border: 2px solid #9f9f9f;
+    border: 2px solid rgba(160, 160, 160, 0.6);
     opacity: 0.8;
     transform: all ease 0.1s;
 }
@@ -66,35 +71,51 @@
 }
 
 .update-text .category{
-    color: white;
+    color: rgb(40, 40, 40);
     font-size: 0.8rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.update-text strong{
+body.dark .update-text .category{
     color: white;
+}
+
+.update-text strong{
+    color: rgb(40, 40, 40);
     font-size: 1.4rem;
     font-weight: 500;
     letter-spacing: 0.7px;
     margin: 5px 0px;
 }
 
+body.dark .update-text strong{
+    color: white;
+}
+
 .update-text .description{
-    color: #9f9f9f;
+    color: #3a3a3a;
     padding: 5px 0px 10px 0px;
 }
 
-.update-text .posttime{
+body.dark .update-text .description{
     color: #9f9f9f;
+}
+
+.update-text .posttime{
+    color: #3a3a3a;
     font-size: 0.8rem;
     letter-spacing: 1px;
+}
+
+body.dark .update-text .posttime{
+    color: #9f9f9f;
 }
 
 /*=================================*/
 
 ::selection{
-    background-color: orangered;
+    background-color: rgba(255, 69, 0, 1);
     color: rgba(20, 20, 20, 1);
 }
 
