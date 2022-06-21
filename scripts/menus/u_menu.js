@@ -1,5 +1,5 @@
 $(document).on('click','.update-filter li', function(){
-    $(this).addClass('update-filter-active').siblings().removeClass('update-filter-active')
+    $(this).addClass('update-filter-active').siblings().removeClass('update-filter-active');
 });
 
 $(document).ready(function(){
@@ -10,6 +10,6 @@ $(document).ready(function(){
         } else {
             $('.update-box').not('.' + value).hide('1000');
             $('.update-box').filter('.' + value).show('1000');
-        }
+        };
     });
 });
