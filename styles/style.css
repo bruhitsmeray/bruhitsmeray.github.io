@@ -8,10 +8,12 @@
 
 :root {
   --bg-color: #fff;
+  --box-color: #f4f5ff;
   --border-color: rgba(50, 50, 50, 0.4);
-  --font-color: #f4f5ff;
+  --font-color: #424242;
 
   --heading-color: rgb(40, 40, 40);
+  --heading-font-color: #fff;
 
   --primary-color: #e07a00;
   --secondary-color: #955100;
@@ -19,16 +21,19 @@
 
 [data-theme="dark"] {
   --bg-color: #282828;
+  --box-color: #333;
   --border-color: rgba(244, 245, 255, 0.4);
-  --font-color: #e1e1ff;
+  --font-color: #fff;
 
-  --heading-color: #333;
+  --heading-color: #fff;
+  --heading-font-color: #424242;
 
   --primary-color: #fbab4d;
   --secondary-color: #fdcf99;
 }
 
 body {
+  background-color: var(--bg-color);
   min-height: 100vh;
   overflow-x: hidden;
   transition: background 0.2s linear;
@@ -64,7 +69,7 @@ ul {
 }
 
 .col-1 {
-  color: #fff;
+  color: var(--font-color);
   position: relative;
   margin-left: 50px;
   flex-basis: 40%;
@@ -98,10 +103,10 @@ i {
 }
 
 .heading h1 span {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--heading-color);
   border-radius: 10px 0px 10px 0px;
 
-  color: white;
+  color: var(--heading-font-color);
   padding: 6px 12px;
 }
 
@@ -114,11 +119,6 @@ footer {
 }
 
 footer p {
-  color: rgb(40, 40, 40);
-  text-align: center;
-}
-
-body.dark footer p {
-  color: #cacaca;
+  color: var(--font-color);
   text-align: center;
 }
