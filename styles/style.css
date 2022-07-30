@@ -1,86 +1,108 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    transition: background 0.2s linear;
+:root {
+  --bg-color: #fff;
+  --border-color: rgba(50, 50, 50, 0.4);
+  --font-color: #f4f5ff;
+
+  --heading-color: rgb(40, 40, 40);
+
+  --primary-color: #e07a00;
+  --secondary-color: #955100;
 }
 
-body.dark{
-    background-color: rgb(40, 40, 40);
+[data-theme="dark"] {
+  --bg-color: #282828;
+  --border-color: rgba(244, 245, 255, 0.4);
+  --font-color: #e1e1ff;
+
+  --heading-color: #333;
+
+  --primary-color: #fbab4d;
+  --secondary-color: #fdcf99;
 }
 
-body.dark .heading h1 span{
-    background-color: white;
-    color: rgba(20, 20, 20, 1);
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 0.2s linear;
 }
 
-a{
-    text-decoration: none;
+body.dark {
+  background-color: rgb(40, 40, 40);
 }
 
-ul{
-    list-style: none;
+body.dark .heading h1 span {
+  background-color: white;
+  color: rgba(20, 20, 20, 1);
 }
 
-.container{
-    padding-left: 8%;
-    padding-right: 8%;
+a {
+  text-decoration: none;
 }
 
-.row{
-    display: flex;
-    margin: 300px 0;
-    text-align: center;
-    justify-content: center;
+ul {
+  list-style: none;
 }
 
-.col-1{
-    color: #fff;
-    position: relative;
-    margin-left: 50px;
-    flex-basis: 40%;
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
-.col-1 h2{
-    font-size: 48px;
+.row {
+  display: flex;
+  margin: 300px 0;
+  text-align: center;
+  justify-content: center;
 }
 
-.col-1 h3{
-    font-size: 24px;
-    margin: 20px 0 10px;
+.col-1 {
+  color: #fff;
+  position: relative;
+  margin-left: 50px;
+  flex-basis: 40%;
 }
 
-i{
-    text-align: center;
-    justify-content: center;
+.col-1 h2 {
+  font-size: 48px;
+}
+
+.col-1 h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+}
+
+i {
+  text-align: center;
+  justify-content: center;
 }
 
 /*=================================*/
 /*=============Heading=============*/
 /*=================================*/
 
-.heading{
-    margin: 20px 0px;
+.heading {
+  margin: 20px 0px;
 }
 
-.heading h1{
-    font-size: 3.5rem;
-    line-height: 72px;
+.heading h1 {
+  font-size: 3.5rem;
+  line-height: 72px;
 }
 
-.heading h1 span{
-    background-color: rgb(40, 40, 40);
-    border-radius: 10px 0px 10px 0px;
+.heading h1 span {
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px 0px 10px 0px;
 
-    color: white;
-    padding: 6px 12px;
+  color: white;
+  padding: 6px 12px;
 }
 
 /*=================================*/
@@ -88,15 +110,15 @@ i{
 /*=================================*/
 
 footer {
-    padding: 40px;
+  padding: 40px;
 }
 
-footer p{
-    color: rgb(40, 40, 40);
-    text-align: center;
+footer p {
+  color: rgb(40, 40, 40);
+  text-align: center;
 }
 
 body.dark footer p {
-    color: #cacaca;
-    text-align: center;
+  color: #cacaca;
+  text-align: center;
 }
