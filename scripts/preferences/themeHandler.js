@@ -1,13 +1,12 @@
 const checkbox = document.getElementById("checkbox");
-const CurrentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
+var sitename = "main-theme";
+const CurrentTheme = localStorage.getItem(sitename)
+  ? localStorage.getItem(sitename)
   : null;
-const bUseLegacyCode = false;
 
 window.onload = Startup();
 
 function Startup() {
-  console.log("Startup function called and executed successfully.");
   if (CurrentTheme) {
     document.documentElement.setAttribute("data-theme", CurrentTheme);
 
@@ -31,26 +30,24 @@ function GetSysColorMode() {
     window.matchMedia("(prefers-color-scheme: dark)").matches
   ) {
     document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
+    localStorage.setItem(sitename, "dark");
     checkbox.checked = true;
   } else if (
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: light)").matches
   ) {
     document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
+    localStorage.setItem(sitename, "light");
     checkbox.checked = false;
   }
-  console.log("GetSysColorMode function called and executed successfully.");
 }
 
 function IfChecked() {
   if (checkbox.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
+    localStorage.setItem(sitename, "dark");
   } else {
     document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
+    localStorage.setItem(sitename, "light");
   }
-  console.log("IfChecked function called and executed successfully.");
 }
