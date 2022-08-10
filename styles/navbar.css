@@ -55,7 +55,7 @@ header {
 }
 
 .checkbox:checked + .label {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .checkbox:checked + .label .ball {
@@ -82,7 +82,7 @@ header {
 }
 
 .ball {
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
 
   position: absolute;
@@ -93,8 +93,6 @@ header {
 
   transition: transform 0.2s linear;
 }
-
-/* NOTE: This is where the dark mode button code section end. */
 
 /* NOTE: This section is reserved for the message code. */
 
