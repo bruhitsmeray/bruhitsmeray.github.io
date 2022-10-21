@@ -14,6 +14,7 @@
 
   --heading-color: #393e41;
   --heading-font-color: #f4f5ff;
+  --hover-color: rgba(50, 50, 50, 0.8);
 
   --primary-color: #e55934;
   --secondary-color: #955100;
@@ -27,6 +28,7 @@
 
   --heading-color: #fff;
   --heading-font-color: #424242;
+  --hover-color: #f4f5ff;
 
   --primary-color: #fa7921;
   --secondary-color: #fdcf99;
