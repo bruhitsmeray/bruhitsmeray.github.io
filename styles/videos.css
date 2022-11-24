@@ -34,6 +34,8 @@ iframe {
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   margin: 10px 0px 50px 0px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .video-text {
