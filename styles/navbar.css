@@ -98,8 +98,9 @@ header {
 
 .message {
   color: white;
-  background: var(--primary-color);
+  background: var(--message-color);
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
 
   padding: 10px;
   font-size: 14px;
@@ -107,7 +108,7 @@ header {
 }
 
 .message h3 {
-  background: var(--primary-color);
+  background: var(--message-color);
 }
 
 .message a {

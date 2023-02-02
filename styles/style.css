@@ -21,16 +21,20 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #393e41;
-  --box-color: #454b4f;
-  --border-color: rgba(244, 245, 255, 0.4);
-  --font-color: #fff;
+  --bg-color: #a39193;
+  --message-color: #66545e;
+  --box-color: #66545e;
+  /* d2ae62 */
+  --border-color: #c5acac; /*This is for the box border aka accent */
+  /* 493433 */
+
+  --font-color: #fff9ee;
 
   --heading-color: #fff;
   --heading-font-color: #424242;
   --hover-color: #f4f5ff;
 
-  --primary-color: #fa7921;
+  --primary-color: #c5acac;
   --secondary-color: #fdcf99;
 }
 
