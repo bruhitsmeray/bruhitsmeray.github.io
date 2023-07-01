@@ -115,30 +115,6 @@ iframe {
   transition: all ease 0.5s;
 }
 
-.content-box::before {
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06),
-    transparent 40%
-  );
-  border-radius: inherit;
-  content: "";
-  height: 100%;
-  left: 0px;
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-  transition: opacity 500ms;
-  width: 100%;
-  z-index: 3;
-}
-
-.content-box::after {
-  background: radial-gradient(
-    400px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.03),
-    transparent 40%
-  );
-}
-
 .content-box:hover {
   border-color: var(--primary-color);
   transform: scale(1.01);
@@ -182,6 +158,7 @@ iframe {
   color: var(--font-color);
   letter-spacing: 1px;
   padding-top: 5px;
+  z-index: 1;
 }
 
 .video-box {
