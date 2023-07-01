@@ -94,27 +94,6 @@ header {
   transition: transform 0.2s linear;
 }
 
-/* NOTE: This section is reserved for the message code. */
-
-.message {
-  color: white;
-  background: var(--primary-color);
-  border-radius: 10px;
-
-  padding: 10px;
-  font-size: 14px;
-  text-align: center;
-}
-
-.message h3 {
-  background: var(--primary-color);
-}
-
-.message a {
-  color: white;
-  text-decoration: none;
-}
-
 /* This is where the message code section ends. */
 
 @media screen and (min-width: 240px) and (max-width: 960px) and (orientation: portrait) {

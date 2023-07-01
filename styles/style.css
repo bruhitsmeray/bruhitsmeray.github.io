@@ -36,6 +36,17 @@
   --text-shadow: black 0px 1px 2px; 
 }
 
+::-moz-selection {
+  color: white;
+  background: var(--primary-color);
+}
+
+::selection {
+  color: white;
+  background: var(--primary-color);
+  text-shadow: black 0px 1px 2px; 
+}
+
 body {
   align-items: center;
   display: flex;
@@ -50,7 +61,16 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 0px;
+}
+
+#welcome {
+  padding-bottom: 20px;
+}
+
+#projects,
+#videos,
+#contact {
+  padding: 20px 0;
 }
 
 a {
@@ -88,29 +108,11 @@ iframe {
   width: 100%;
 }
 
-.section-container.welcome-container .content-box {
-  padding: 6px 12px;
-}
-
-.content-box.project-box:hover,
-.section-container.welcome-container .content-box:hover {
-  border-color: var(--border-color);
-  transform: none;
-  transform: none;
-  transition: none;
-}
-
-.section-container.welcome-container .description {
-  color: var(--font-color);
-  letter-spacing: 1px;
-  padding: 0;
-}
-
 .content-box {
   background-color: var(--box-color);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  padding: 10px 14px;
+  padding: 10px 16px;
   position: relative;
   transition: all ease 0.5s;
 }
@@ -124,6 +126,24 @@ iframe {
 
 .content-box:hover::after {
   opacity: 1;
+}
+
+.content-box.welcome-box {
+  padding: 8px 16px;
+}
+
+.content-box.welcome-box:hover,
+.content-box.project-box:hover {
+  border-color: var(--border-color);
+  transform: none;
+  transform: none;
+  transition: none;
+}
+
+.content-box.welcome-box .description {
+  color: var(--font-color);
+  letter-spacing: 1px;
+  padding: 0;
 }
 
 .box-content {
@@ -226,7 +246,7 @@ textarea:focus::placeholder{
 /*=================================*/
 
 .heading {
-  padding: 20px 0;
+  padding-bottom: 20px;
 }
 
 .heading h1 {
