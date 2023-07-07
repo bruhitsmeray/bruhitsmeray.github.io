@@ -1,160 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>whiteline</title>
-    <link rel="icon" href="assets/logo.png" />
+        <title>Whiteline</title>
+        <link rel="icon" href="assets/logo.png" />
 
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/videos.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <a href="index.html" class="logo">whiteline.</a>
+        <link rel="stylesheet" href="./styles/colors.css" />
+        <link rel="stylesheet" href="./styles/navbar.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
+    </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYPSQRD8Q5"></script>
+    <script src="scripts/analytics.js"></script>
+    
+    <body>
         <nav>
-          <ul class="nav-links">
-            <li><a href="https://itswhiteline.github.io/hub/" target="_blank">Blog</a></li>
-            <li><a href="https://www.twitch.tv/itswhiteline" target="_blank">Twitch</a></li>
-            <li><a href="https://github.com/itswhiteline" target="_blank">Github</a></li>
-          </ul>
+            <a href="index.html" class="logo">whiteline.</a>
+            <ul class="nav-links">
+                <li><a href="https://itswhiteline.github.io/hub/" target="_blank">Blog</a></li>
+                <li><a href="https://www.twitch.tv/itswhiteline" target="_blank">Twitch</a></li>
+                <li><a href="https://github.com/itswhiteline" target="_blank">Github</a></li>
+            </ul>
+            <ul class="mobile-nav-links">
+                <li><a href="https://itswhiteline.github.io/hub/" target="_blank">Blog</a></li>
+            </ul>
+            <input type="checkbox" class="checkbox" id="checkbox" checked />
+            <label for="checkbox" class="label"><div class="ball"></div></label>
         </nav>
-        <input type="checkbox" class="checkbox" id="checkbox" checked />
-        <label for="checkbox" class="label"><div class="ball"></div></label>
-      </header>
 
-      <section id="welcome">
-        <div class="heading">
-          <h1><span>Welcome.</span></h1>
-        </div>
+        <main>
+            <section class="welcome">
+                <h1 class="header"><span>Welcome.</span></h1>
+                <article>
+                    <p>
+                        Hello! I am Andrew, a 20 years old programmer, based in Bucharest, Romania!
+                        Most of my work is focused on game development. You can check all my public 
+                        projects down bellow.
+                    </p>
+                </article>
+            </section>
 
-        <div class="section-container welcome-container">
-          <div class="content-box welcome-box">
-            <div class="box-content">
-              <span class="description">
-                <p>
-                  Hello! I am Andrew, a 20 years old programmer, based in Bucharest, Romania!
-                  Most of my work is focused on game development. You can check all my public 
-                  projects down bellow.
-                </p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+            <section class="projects">
+                <h1 class="header"><span>Projects.</span></h1>
+                <div class="article-container">
+                    <article>
+                        <span class="type">Game</span>
+                        <h1 class="title">Decay</h1>
+                        <span class="description">
+                            <p>
+                              Decay is an atmospheric horror game that is currently in early development. 
+                            </p>
+                            <br>
+                            <p>
+                              A very early showcase was released in late 2019 on GameJolt but was later taken
+                              down since it does not represent the current product in any shape or form anymore.
+                            </p>
+                          </span>
+                    </article>
 
-      <section id="projects">
-        <div class="heading">
-          <h1><span>Projects.</span></h1>
-        </div>
+                    <article>
+                        <span class="type">Discord Bot</span>
+                        <h1 class="title">Eutera</h1>
+                        <span class="description">
+                            <p>
+                              Eutera was a multifunctional Discord bot, that I started developing in late 2020. The last
+                              update I've released for it was on 18th of August, 2022.
+                            </p>
+                            <br>
+                            <p>
+                              The bot has been taken offline since due to high server costs.
+                            </p>
+                        </span>
+                    </article>
+                </div>
+            </section>
 
-        <div class="section-container">
+            <section class="videos">
+                <h1 class="header"><span>Videos.</span></h1>
+                <article href="https://youtu.be/ZBoqDY0nBz4" class="video-box">
+                    <span class="type">Showcase</span>
+                    <strong class="title video-title">Decay (0.3.2) - December 2022 Showcase</strong>
+                </article>
+                <article href="https://youtu.be/TMAYlsJ9K4A" class="video-box">
+                    <span class="type">Showcase</span>
+                    <strong class="title video-title">Decay (0.2.7) - November 2022 Showcase</strong>
+                </article>
+                <article href="https://youtu.be/_MSIiP_tfEY" class="video-box">
+                    <span class="type">Showcase</span>
+                    <strong class="title video-title">Decay (0.1.x) - April 2021 Showcase</strong>
+                </article>
+            </section>
 
-            <div class="content-box project-box decay">
-              <div class="box-content">
-                <span class="category">Game</span>
-                <strong class="title">Decay</strong>
-                <span class="description">
-                  <p>
-                    Decay is an atmospheric horror game that is currently in early development. 
-                  </p>
-                  <br>
-                  <p>
-                    A very early showcase was released in late 2019 on GameJolt but was later taken
-                    down since it does not represent the current product in any shape or form anymore.
-                  </p>
-                </span>
-              </div>
-            </div>
+            <section class="contact">
+                <h1 class="header"><span>Contact.</span></h1>
+                <article>
+                    <form action="https://formspree.io/f/xjvddped" target="_blank" method="POST">
+                        <div>
+                            <label for="name">Full Name*</label>
+                            <input type="text" name="name" placeholder="Please enter your full name.">
+                        </div>
+                        <div>
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" placeholder="Please enter your email address.">
+                        </div>
+                        <div>
+                            <label for="message">Message*</label>
+                            <textarea name="message" placeholder="Please enter your message."></textarea>
+                        </div>
+                        <input type="submit" value="Send the message" class="submit-btn">
+                    </form>
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Copyright &copy; 2023 <a href="https://twitter.com/itswhiteline">Whiteline</a></p>
+            <p>All Rights Reserved</p>
+        </footer>
 
-            <div class="content-box project-box eutera">
-              <div class="box-content">
-                <span class="category">Discord Bot</span>
-                <strong class="title">Eutera</strong>
-                <span class="description">
-                  <p>
-                    Eutera was a multifunctional Discord bot, that I started developing in late 2020. The last
-                    update I've released for it was on 18th of August, 2022.
-                  </p>
-                  <br>
-                  <p>
-                    The bot has been taken offline since due to high server costs.
-                  </p>
-                </span>
-              </div>
-            </div>
-
-        </div>
-      </section>
-
-      <section id="videos">
-        <div class="heading">
-          <h1><span>Videos.</span></h1>
-        </div>
-
-        <div class="section-container videos-container">
-
-          <div href="https://youtu.be/ZBoqDY0nBz4" class="content-box video-box">
-            <div class="box-content">
-              <span class="category">Showcase</span>
-              <strong class="title video-title">Decay (0.3.2) - December 2022 Showcase</strong>
-            </div>
-          </div>
-
-          <div href="https://youtu.be/TMAYlsJ9K4A" class="content-box video-box">
-            <div class="box-content">
-              <span class="category">Showcase</span>
-              <strong class="title video-title">Decay (0.2.7) - November 2022 Showcase</strong>
-            </div>
-          </div>
-          
-          <div href="https://youtu.be/_MSIiP_tfEY" class="content-box video-box">
-            <div class="box-content">
-              <span class="category">Showcase</span>
-              <strong class="title video-title">Decay (0.1.x) - April 2021 Showcase</strong>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <section id="contact">
-        <div class="heading">
-          <h1><span>Contact.</span></h1>
-        </div>
-
-        <div class="section-container contact-container">
-          <div class="contact-box">
-            <form action="https://formspree.io/f/xjvddped" target="_blank" method="POST">
-              <div>
-                  <label for="name">Full Name*</label>
-                  <input type="text" name="name" placeholder="Please enter your full name.">
-              </div>
-              <div>
-                  <label for="email">Email*</label>
-                  <input type="email" name="email" placeholder="Please enter your email address.">
-              </div>
-              <div>
-                  <label for="message">Message*</label>
-                  <textarea name="message" placeholder="Please enter your message."></textarea>
-              </div>
-              <input type="submit" value="Send the message" class="submit-btn">
-            </form>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer class="bg_light">
-      <p>Copyright &copy; 2023 <a href="https://twitter.com/itswhiteline">Whiteline</a></p>
-      <p>All Rights Reserved</p>
-    </footer>
-
-    <script src="scripts/preferences/themeHandler.js" type="module"></script>
-    <script src="scripts/redirect.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  </body>
+        <script src="scripts/themeManager.js"></script>
+        <script src="scripts/redirectManager.js"></script>
+    </body>
 </html>
