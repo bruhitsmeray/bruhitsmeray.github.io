@@ -1,0 +1,10 @@
+title: Whiteline
+email: itswhiteline@gmail.com
+description: This is the hub for everything Whiteline.
+
+google_analytics: G-XYPSQRD8Q5
+author: Whiteline
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
