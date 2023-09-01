@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    text-shadow: 0 0 0.2em white;
+}
+
+section{
+    width: 100%;
+    max-width: 75%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position: relative;
+    min-height: 100vh;
+}
+
+.welcome .content{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.welcome img{
+    height: auto;
+    width: 360px;
+}
+
+.welcome h1,
+.welcome h2{
+    font-size: 32px;
+}
+
+.welcome .bio{
+    font-size: 22px;
+    margin: 2% 0;
+}
+
+.welcome .color{
+    background: linear-gradient(120deg, #1a8e64, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 0.5em var(--accent);
+}
+
+.welcome .scroll{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    bottom: 8%;
+}
+
+.welcome svg{
+    align-self: center;
+    margin-bottom: 12px;
+    width: 32px;
+}
+
+.welcome svg #wheel{
+    animation: scroll ease 1.5s infinite;
+}
+
+.welcome .message{
+    font-size: 16px;
+}
+
+.crt::before,
+.crt::after{
+    content: " ";
+    display: block;
+
+    pointer-events: none;
+    position: fixed;
+
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+}
+
+.crt::before{
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+}
+
+.crt::after{
+    animation: flicker 0.15s infinite;
+    background: rgba(18, 16, 16, 0.1);
+    
+    opacity: 0;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.27861;
+    }
+    5% {
+        opacity: 0.34769;
+    }
+    10% {
+        opacity: 0.23604;
+    }
+    15% {
+        opacity: 0.90626;
+    }
+    20% {
+        opacity: 0.18128;
+    }
+    25% {
+        opacity: 0.83891;
+    }
+    30% {
+        opacity: 0.65583;
+    }
+    35% {
+        opacity: 0.67807;
+    }
+    40% {
+        opacity: 0.26559;
+    }
+    45% {
+        opacity: 0.84693;
+    }
+    50% {
+        opacity: 0.96019;
+    }
+    55% {
+        opacity: 0.08594;
+    }
+    60% {
+        opacity: 0.20313;
+    }
+    65% {
+        opacity: 0.71988;
+    }
+    70% {
+        opacity: 0.53455;
+    }
+    75% {
+        opacity: 0.37288;
+    }
+    80% {
+        opacity: 0.71428;
+    }
+    85% {
+        opacity: 0.70419;
+    }
+    90% {
+        opacity: 0.7003;
+    }
+    95% {
+        opacity: 0.36108;
+    }
+    100% {
+        opacity: 0.24387;
+    }
+}
+
+.timeline{
+    margin: 5em auto;
+    max-width: 34.15em;
+}
+
+.checkpoint{
+    position: relative;
+    padding: 2em 0;
+    max-width: 34em;
+}
+
+.checkpoint div{
+    background-color: var(--secondary);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.highlight:hover{
+    border-color: var(--accent);
+    cursor: pointer;
+}
+
+.checkpoint .typedate,
+.checkpoint p{
+    color: #ccc;
+}
+
+.checkpoint .typedate{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1%;
+    text-transform: uppercase;
+}
+
+.checkpoint .details{
+    margin-top: 4px;
+}
+
+.checkpoint p{
+    line-height: 28px;
+}
+
+.checkpoint:nth-child(odd){
+    border-left: 3px solid var(--border);
+    padding-left: 3em;
+    transform: translateX(17em);
+}
+
+.checkpoint:nth-child(even){
+    border-right: 3px solid var(--border);
+    padding-right: 3em;
+    transform: translateX(-17em);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before{
+    background-color: #888;
+
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 3em;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before{
+    left: 0;
+}
+
+.checkpoint:nth-child(even)::before{
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before,
+.checkpoint:nth-child(even) div::before{
+    background-color: var(--accent);
+    box-shadow: 0 0 0.5em var(--accent);
+    border-radius: 50%;
+    content: '';
+
+    position: absolute;
+
+    height: 0.8em;
+    width: 0.8em;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd) div::before{
+    left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before{
+    right: -0.5em;
+}
+
+.contact{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    padding: 2em 0;
+}
+
+.contact article{
+    width: 100%;
+    max-width: 68.5em;
+}
+
+label{ 
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+  
+input,
+textarea{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  
+    background-color: var(--secondary);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+  
+    color: var(--text);
+  
+    margin: 12px 0;
+    padding: 0 12px;
+    
+    font-family: monospace;
+  
+    height: 42px;
+    width: 100%;
+}
+  
+input:hover,
+textarea:hover{
+    border-color: var(--accent);
+}
+  
+input::placeholder,
+textarea::placeholder {
+    color: var(--font-color);
+}
+  
+textarea{
+    padding: 12px;
+    resize: none;
+  
+    height: 86px;
+}
+  
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+footer{
+    font-size: 16px;
+    padding: 4% 0;
+  
+    transition: 0.2s;
+}
+  
+footer a {
+    color: var(--accent);
+    font-family: monospace;
+}
+
+footer a:hover{
+    text-shadow: 0 0 0.5em var(--accent);
+}
+  
+footer p{
+    color: var(--font-color);
+    font-family: monospace;
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .timeline .checkpoint{
+        border: none;
+
+        padding-left: 0;
+        padding-right: 0;
+        
+        width: 100%;
+        transform: none;
+    }
+
+    .timeline .checkpoint::before{
+        top: -2em;
+        left: 50%;
+
+        height: 4em;
+        width: 3px;
+
+        transform: translateX(-50%);
+    }
+
+    .timeline .checkpoint div::before{
+        top: -0.5em;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .welcome{
+        text-align: center;
+    }
+
+    .welcome .content{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .welcome .text-content{
+        z-index: 1;
+    }
+
+    .welcome .message{
+        font-size: 14px;
+    }
+
+    .welcome svg{
+        width: 24px;
+    }
+
+    .welcome img{
+        filter: grayscale(1);
+        position: absolute;
+        opacity: 0.1;
+        width: 320px;
+    }
+
+    .welcome h1{
+        font-size: 24px;
+    }
+
+    .welcome h2{
+        font-size: 18px;
+        font-weight: 500;
+
+        margin: 4px 0 8px 0;
+    }
+
+    .welcome .bio{
+        font-size: 16px;
+    }
+
+    .checkpoint{
+        text-align: center;
+    }
+
+    .checkpoint .typedate{
+        font-size: 14px;
+    }
+
+    .checkpoint .details{
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    
+    .checkpoint p{
+        line-height: 28px;
+    }
+
+    .contact article{
+        max-width: 24em;
+    }
+}
