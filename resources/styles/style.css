@@ -58,6 +58,17 @@ a{
     margin: 2% 0;
 }
 
+.welcome .bio p:after{
+    animation: cursor-blink 1.5s steps(2) infinite;
+    background: var(--text);
+    display: inline-block;
+
+    content: "";
+
+    height: 4px;
+    width: 12px;
+}
+
 .welcome .color{
     background: linear-gradient(120deg, #1a8e64, var(--accent));
     -webkit-background-clip: text;
@@ -115,81 +126,6 @@ a{
     background: rgba(18, 16, 16, 0.1);
     
     opacity: 0;
-}
-
-@keyframes scroll {
-	0% {
-		transform: translateY(0);
-	}
-	30% {
-		transform: translateY(100px);
-	}
-}
-
-@keyframes flicker {
-    0% {
-        opacity: 0.27861;
-    }
-    5% {
-        opacity: 0.34769;
-    }
-    10% {
-        opacity: 0.23604;
-    }
-    15% {
-        opacity: 0.90626;
-    }
-    20% {
-        opacity: 0.18128;
-    }
-    25% {
-        opacity: 0.83891;
-    }
-    30% {
-        opacity: 0.65583;
-    }
-    35% {
-        opacity: 0.67807;
-    }
-    40% {
-        opacity: 0.26559;
-    }
-    45% {
-        opacity: 0.84693;
-    }
-    50% {
-        opacity: 0.96019;
-    }
-    55% {
-        opacity: 0.08594;
-    }
-    60% {
-        opacity: 0.20313;
-    }
-    65% {
-        opacity: 0.71988;
-    }
-    70% {
-        opacity: 0.53455;
-    }
-    75% {
-        opacity: 0.37288;
-    }
-    80% {
-        opacity: 0.71428;
-    }
-    85% {
-        opacity: 0.70419;
-    }
-    90% {
-        opacity: 0.7003;
-    }
-    95% {
-        opacity: 0.36108;
-    }
-    100% {
-        opacity: 0.24387;
-    }
 }
 
 .timeline{
@@ -448,6 +384,11 @@ footer p{
         font-size: 16px;
     }
 
+    .welcome .bio p:after{
+        height: 2px;
+        width: 8px;
+    }
+
     .checkpoint{
         text-align: center;
     }
@@ -467,5 +408,86 @@ footer p{
 
     .contact article{
         max-width: 24em;
+    }
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(100px);
+	}
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.27861;
+    }
+    5% {
+        opacity: 0.34769;
+    }
+    10% {
+        opacity: 0.23604;
+    }
+    15% {
+        opacity: 0.90626;
+    }
+    20% {
+        opacity: 0.18128;
+    }
+    25% {
+        opacity: 0.83891;
+    }
+    30% {
+        opacity: 0.65583;
+    }
+    35% {
+        opacity: 0.67807;
+    }
+    40% {
+        opacity: 0.26559;
+    }
+    45% {
+        opacity: 0.84693;
+    }
+    50% {
+        opacity: 0.96019;
+    }
+    55% {
+        opacity: 0.08594;
+    }
+    60% {
+        opacity: 0.20313;
+    }
+    65% {
+        opacity: 0.71988;
+    }
+    70% {
+        opacity: 0.53455;
+    }
+    75% {
+        opacity: 0.37288;
+    }
+    80% {
+        opacity: 0.71428;
+    }
+    85% {
+        opacity: 0.70419;
+    }
+    90% {
+        opacity: 0.7003;
+    }
+    95% {
+        opacity: 0.36108;
+    }
+    100% {
+        opacity: 0.24387;
     }
 }
