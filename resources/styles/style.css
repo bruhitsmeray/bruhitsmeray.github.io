@@ -27,6 +27,10 @@ a{
     text-decoration: none;
 }
 
+.hidden{
+    display: none;
+}
+
 .welcome{
     display: flex;
     flex-direction: column;
