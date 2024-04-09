@@ -27,6 +27,12 @@ a{
     text-decoration: none;
 }
 
+::-moz-selection,
+::selection{
+    color: var(--accent);
+    background-color: white;
+}
+
 .hidden{
     display: none;
 }
